@@ -11,8 +11,8 @@
           <include name="Step_1"/>
           <include name="Update"/>
           <include name="Homepage"/>
-          <include name="ExtentReportSetup1"/>
           <include name="Login"/>
+          <include name="ExtentReportSetup1"/>
           <include name="chromeLaunch"/>
           <include name="teardown1"/>
           <include name="Step_7"/>
