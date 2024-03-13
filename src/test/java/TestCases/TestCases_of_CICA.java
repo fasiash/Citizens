@@ -119,7 +119,7 @@ public class TestCases_of_CICA{
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--allow-running-insecure-content");
 		options.addArguments("--remote-allow-origins=*");
-		options.addArguments("--incognito");
+//		options.addArguments("--incognito");
 		options.setBinary("C:\\Users\\Codetru\\Downloads\\chrome-win64\\chrome-win64\\chrome.exe");
 		driver = new ChromeDriver(options);
 		driver.manage().deleteAllCookies();
