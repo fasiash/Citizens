@@ -2,26 +2,37 @@
 <testng-results ignored="0" total="12" passed="0" failed="0" skipped="12">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-13T09:33:26 IST" name="Default suite" finished-at="2024-03-13T09:33:26 IST" duration-ms="295">
+  <suite started-at="2024-03-13T10:07:12 IST" name="Default suite" finished-at="2024-03-13T10:07:13 IST" duration-ms="269">
     <groups>
     </groups>
-    <test started-at="2024-03-13T09:33:26 IST" name="Default test" finished-at="2024-03-13T09:33:26 IST" duration-ms="295">
+    <test started-at="2024-03-13T10:07:12 IST" name="Default test" finished-at="2024-03-13T10:07:13 IST" duration-ms="269">
       <class name="TestCases.TestCases_of_CICA">
-        <test-method is-config="true" signature="ExtentReportSetup1()[pri:0, instance:TestCases.TestCases_of_CICA@24269709]" started-at="2024-03-13T09:33:25 IST" name="ExtentReportSetup1" finished-at="2024-03-13T09:33:26 IST" duration-ms="531" status="PASS">
+        <test-method is-config="true" signature="ExtentReportSetup1()[pri:0, instance:TestCases.TestCases_of_CICA@6a78afa0]" started-at="2024-03-13T10:07:12 IST" name="ExtentReportSetup1" finished-at="2024-03-13T10:07:12 IST" duration-ms="359" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ExtentReportSetup1 -->
-        <test-method is-config="true" signature="chromeLaunch()[pri:0, instance:TestCases.TestCases_of_CICA@24269709]" started-at="2024-03-13T09:33:26 IST" name="chromeLaunch" finished-at="2024-03-13T09:33:26 IST" duration-ms="91" status="FAIL">
-          <exception class="java.lang.AbstractMethodError">
+        <test-method is-config="true" signature="chromeLaunch()[pri:0, instance:TestCases.TestCases_of_CICA@6a78afa0]" started-at="2024-03-13T10:07:12 IST" name="chromeLaunch" finished-at="2024-03-13T10:07:12 IST" duration-ms="92" status="FAIL">
+          <exception class="org.openqa.selenium.remote.NoSuchDriverException">
             <message>
-              <![CDATA[Receiver class org.openqa.selenium.chrome.ChromeDriverService$Builder does not define or inherit an implementation of the resolved method 'abstract void loadSystemProperties()' of abstract class org.openqa.selenium.remote.service.DriverService$Builder.]]>
+              <![CDATA[chromedriver located at C://Users//Codetru//eclipse-workspace//SampleCodetruProject//Citizens_ProjectNewUpdated//BrowserDriver//chromedriver.exe, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: ChromeDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AbstractMethodError: Receiver class org.openqa.selenium.chrome.ChromeDriverService$Builder does not define or inherit an implementation of the resolved method 'abstract void loadSystemProperties()' of abstract class org.openqa.selenium.remote.service.DriverService$Builder.
-at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:509)
-at org.openqa.selenium.chrome.ChromeDriverService.createServiceWithConfig(ChromeDriverService.java:181)
+              <![CDATA[org.openqa.selenium.remote.NoSuchDriverException: chromedriver located at C://Users//Codetru//eclipse-workspace//SampleCodetruProject//Citizens_ProjectNewUpdated//BrowserDriver//chromedriver.exe, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:45)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:89)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
 at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:73)
-at TestCases.TestCases_of_CICA.chromeLaunch(TestCases_of_CICA.java:122)
+at TestCases.TestCases_of_CICA.chromeLaunch(TestCases_of_CICA.java:123)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -48,21 +59,32 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AbstractMethodError -->
+          </exception> <!-- org.openqa.selenium.remote.NoSuchDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- chromeLaunch -->
-        <test-method signature="Login()[pri:1, instance:TestCases.TestCases_of_CICA@24269709]" started-at="2024-03-13T09:33:26 IST" name="Login" finished-at="2024-03-13T09:33:26 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.AbstractMethodError">
+        <test-method signature="Login()[pri:1, instance:TestCases.TestCases_of_CICA@6a78afa0]" started-at="2024-03-13T10:07:12 IST" name="Login" finished-at="2024-03-13T10:07:12 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.remote.NoSuchDriverException">
             <message>
-              <![CDATA[Receiver class org.openqa.selenium.chrome.ChromeDriverService$Builder does not define or inherit an implementation of the resolved method 'abstract void loadSystemProperties()' of abstract class org.openqa.selenium.remote.service.DriverService$Builder.]]>
+              <![CDATA[chromedriver located at C://Users//Codetru//eclipse-workspace//SampleCodetruProject//Citizens_ProjectNewUpdated//BrowserDriver//chromedriver.exe, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: ChromeDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AbstractMethodError: Receiver class org.openqa.selenium.chrome.ChromeDriverService$Builder does not define or inherit an implementation of the resolved method 'abstract void loadSystemProperties()' of abstract class org.openqa.selenium.remote.service.DriverService$Builder.
-at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:509)
-at org.openqa.selenium.chrome.ChromeDriverService.createServiceWithConfig(ChromeDriverService.java:181)
+              <![CDATA[org.openqa.selenium.remote.NoSuchDriverException: chromedriver located at C://Users//Codetru//eclipse-workspace//SampleCodetruProject//Citizens_ProjectNewUpdated//BrowserDriver//chromedriver.exe, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:45)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:89)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
 at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:73)
-at TestCases.TestCases_of_CICA.chromeLaunch(TestCases_of_CICA.java:122)
+at TestCases.TestCases_of_CICA.chromeLaunch(TestCases_of_CICA.java:123)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -89,21 +111,32 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AbstractMethodError -->
+          </exception> <!-- org.openqa.selenium.remote.NoSuchDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="Homepage()[pri:2, instance:TestCases.TestCases_of_CICA@24269709]" started-at="2024-03-13T09:33:26 IST" name="Homepage" finished-at="2024-03-13T09:33:26 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.AbstractMethodError">
+        <test-method signature="Homepage()[pri:2, instance:TestCases.TestCases_of_CICA@6a78afa0]" started-at="2024-03-13T10:07:12 IST" name="Homepage" finished-at="2024-03-13T10:07:12 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.remote.NoSuchDriverException">
             <message>
-              <![CDATA[Receiver class org.openqa.selenium.chrome.ChromeDriverService$Builder does not define or inherit an implementation of the resolved method 'abstract void loadSystemProperties()' of abstract class org.openqa.selenium.remote.service.DriverService$Builder.]]>
+              <![CDATA[chromedriver located at C://Users//Codetru//eclipse-workspace//SampleCodetruProject//Citizens_ProjectNewUpdated//BrowserDriver//chromedriver.exe, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: ChromeDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AbstractMethodError: Receiver class org.openqa.selenium.chrome.ChromeDriverService$Builder does not define or inherit an implementation of the resolved method 'abstract void loadSystemProperties()' of abstract class org.openqa.selenium.remote.service.DriverService$Builder.
-at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:509)
-at org.openqa.selenium.chrome.ChromeDriverService.createServiceWithConfig(ChromeDriverService.java:181)
+              <![CDATA[org.openqa.selenium.remote.NoSuchDriverException: chromedriver located at C://Users//Codetru//eclipse-workspace//SampleCodetruProject//Citizens_ProjectNewUpdated//BrowserDriver//chromedriver.exe, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:45)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:89)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
 at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:73)
-at TestCases.TestCases_of_CICA.chromeLaunch(TestCases_of_CICA.java:122)
+at TestCases.TestCases_of_CICA.chromeLaunch(TestCases_of_CICA.java:123)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -130,21 +163,32 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AbstractMethodError -->
+          </exception> <!-- org.openqa.selenium.remote.NoSuchDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Homepage -->
-        <test-method signature="Step_1()[pri:3, instance:TestCases.TestCases_of_CICA@24269709]" started-at="2024-03-13T09:33:26 IST" name="Step_1" finished-at="2024-03-13T09:33:26 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.AbstractMethodError">
+        <test-method signature="Step_1()[pri:3, instance:TestCases.TestCases_of_CICA@6a78afa0]" started-at="2024-03-13T10:07:12 IST" name="Step_1" finished-at="2024-03-13T10:07:12 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.remote.NoSuchDriverException">
             <message>
-              <![CDATA[Receiver class org.openqa.selenium.chrome.ChromeDriverService$Builder does not define or inherit an implementation of the resolved method 'abstract void loadSystemProperties()' of abstract class org.openqa.selenium.remote.service.DriverService$Builder.]]>
+              <![CDATA[chromedriver located at C://Users//Codetru//eclipse-workspace//SampleCodetruProject//Citizens_ProjectNewUpdated//BrowserDriver//chromedriver.exe, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: ChromeDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AbstractMethodError: Receiver class org.openqa.selenium.chrome.ChromeDriverService$Builder does not define or inherit an implementation of the resolved method 'abstract void loadSystemProperties()' of abstract class org.openqa.selenium.remote.service.DriverService$Builder.
-at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:509)
-at org.openqa.selenium.chrome.ChromeDriverService.createServiceWithConfig(ChromeDriverService.java:181)
+              <![CDATA[org.openqa.selenium.remote.NoSuchDriverException: chromedriver located at C://Users//Codetru//eclipse-workspace//SampleCodetruProject//Citizens_ProjectNewUpdated//BrowserDriver//chromedriver.exe, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:45)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:89)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
 at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:73)
-at TestCases.TestCases_of_CICA.chromeLaunch(TestCases_of_CICA.java:122)
+at TestCases.TestCases_of_CICA.chromeLaunch(TestCases_of_CICA.java:123)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -171,21 +215,32 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AbstractMethodError -->
+          </exception> <!-- org.openqa.selenium.remote.NoSuchDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Step_1 -->
-        <test-method signature="Step_2()[pri:4, instance:TestCases.TestCases_of_CICA@24269709]" started-at="2024-03-13T09:33:26 IST" name="Step_2" finished-at="2024-03-13T09:33:26 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.AbstractMethodError">
+        <test-method signature="Step_2()[pri:4, instance:TestCases.TestCases_of_CICA@6a78afa0]" started-at="2024-03-13T10:07:12 IST" name="Step_2" finished-at="2024-03-13T10:07:12 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.remote.NoSuchDriverException">
             <message>
-              <![CDATA[Receiver class org.openqa.selenium.chrome.ChromeDriverService$Builder does not define or inherit an implementation of the resolved method 'abstract void loadSystemProperties()' of abstract class org.openqa.selenium.remote.service.DriverService$Builder.]]>
+              <![CDATA[chromedriver located at C://Users//Codetru//eclipse-workspace//SampleCodetruProject//Citizens_ProjectNewUpdated//BrowserDriver//chromedriver.exe, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: ChromeDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AbstractMethodError: Receiver class org.openqa.selenium.chrome.ChromeDriverService$Builder does not define or inherit an implementation of the resolved method 'abstract void loadSystemProperties()' of abstract class org.openqa.selenium.remote.service.DriverService$Builder.
-at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:509)
-at org.openqa.selenium.chrome.ChromeDriverService.createServiceWithConfig(ChromeDriverService.java:181)
+              <![CDATA[org.openqa.selenium.remote.NoSuchDriverException: chromedriver located at C://Users//Codetru//eclipse-workspace//SampleCodetruProject//Citizens_ProjectNewUpdated//BrowserDriver//chromedriver.exe, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:45)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:89)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
 at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:73)
-at TestCases.TestCases_of_CICA.chromeLaunch(TestCases_of_CICA.java:122)
+at TestCases.TestCases_of_CICA.chromeLaunch(TestCases_of_CICA.java:123)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -212,21 +267,32 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AbstractMethodError -->
+          </exception> <!-- org.openqa.selenium.remote.NoSuchDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Step_2 -->
-        <test-method signature="Step_3()[pri:5, instance:TestCases.TestCases_of_CICA@24269709]" started-at="2024-03-13T09:33:26 IST" name="Step_3" finished-at="2024-03-13T09:33:26 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.AbstractMethodError">
+        <test-method signature="Step_3()[pri:5, instance:TestCases.TestCases_of_CICA@6a78afa0]" started-at="2024-03-13T10:07:12 IST" name="Step_3" finished-at="2024-03-13T10:07:12 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.remote.NoSuchDriverException">
             <message>
-              <![CDATA[Receiver class org.openqa.selenium.chrome.ChromeDriverService$Builder does not define or inherit an implementation of the resolved method 'abstract void loadSystemProperties()' of abstract class org.openqa.selenium.remote.service.DriverService$Builder.]]>
+              <![CDATA[chromedriver located at C://Users//Codetru//eclipse-workspace//SampleCodetruProject//Citizens_ProjectNewUpdated//BrowserDriver//chromedriver.exe, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: ChromeDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AbstractMethodError: Receiver class org.openqa.selenium.chrome.ChromeDriverService$Builder does not define or inherit an implementation of the resolved method 'abstract void loadSystemProperties()' of abstract class org.openqa.selenium.remote.service.DriverService$Builder.
-at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:509)
-at org.openqa.selenium.chrome.ChromeDriverService.createServiceWithConfig(ChromeDriverService.java:181)
+              <![CDATA[org.openqa.selenium.remote.NoSuchDriverException: chromedriver located at C://Users//Codetru//eclipse-workspace//SampleCodetruProject//Citizens_ProjectNewUpdated//BrowserDriver//chromedriver.exe, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:45)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:89)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
 at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:73)
-at TestCases.TestCases_of_CICA.chromeLaunch(TestCases_of_CICA.java:122)
+at TestCases.TestCases_of_CICA.chromeLaunch(TestCases_of_CICA.java:123)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -253,21 +319,32 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AbstractMethodError -->
+          </exception> <!-- org.openqa.selenium.remote.NoSuchDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Step_3 -->
-        <test-method signature="Step_4()[pri:6, instance:TestCases.TestCases_of_CICA@24269709]" started-at="2024-03-13T09:33:26 IST" name="Step_4" finished-at="2024-03-13T09:33:26 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.AbstractMethodError">
+        <test-method signature="Step_4()[pri:6, instance:TestCases.TestCases_of_CICA@6a78afa0]" started-at="2024-03-13T10:07:13 IST" name="Step_4" finished-at="2024-03-13T10:07:13 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.remote.NoSuchDriverException">
             <message>
-              <![CDATA[Receiver class org.openqa.selenium.chrome.ChromeDriverService$Builder does not define or inherit an implementation of the resolved method 'abstract void loadSystemProperties()' of abstract class org.openqa.selenium.remote.service.DriverService$Builder.]]>
+              <![CDATA[chromedriver located at C://Users//Codetru//eclipse-workspace//SampleCodetruProject//Citizens_ProjectNewUpdated//BrowserDriver//chromedriver.exe, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: ChromeDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AbstractMethodError: Receiver class org.openqa.selenium.chrome.ChromeDriverService$Builder does not define or inherit an implementation of the resolved method 'abstract void loadSystemProperties()' of abstract class org.openqa.selenium.remote.service.DriverService$Builder.
-at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:509)
-at org.openqa.selenium.chrome.ChromeDriverService.createServiceWithConfig(ChromeDriverService.java:181)
+              <![CDATA[org.openqa.selenium.remote.NoSuchDriverException: chromedriver located at C://Users//Codetru//eclipse-workspace//SampleCodetruProject//Citizens_ProjectNewUpdated//BrowserDriver//chromedriver.exe, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:45)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:89)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
 at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:73)
-at TestCases.TestCases_of_CICA.chromeLaunch(TestCases_of_CICA.java:122)
+at TestCases.TestCases_of_CICA.chromeLaunch(TestCases_of_CICA.java:123)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -294,21 +371,32 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AbstractMethodError -->
+          </exception> <!-- org.openqa.selenium.remote.NoSuchDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Step_4 -->
-        <test-method signature="Step_5()[pri:7, instance:TestCases.TestCases_of_CICA@24269709]" started-at="2024-03-13T09:33:26 IST" name="Step_5" finished-at="2024-03-13T09:33:26 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.AbstractMethodError">
+        <test-method signature="Step_5()[pri:7, instance:TestCases.TestCases_of_CICA@6a78afa0]" started-at="2024-03-13T10:07:13 IST" name="Step_5" finished-at="2024-03-13T10:07:13 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.remote.NoSuchDriverException">
             <message>
-              <![CDATA[Receiver class org.openqa.selenium.chrome.ChromeDriverService$Builder does not define or inherit an implementation of the resolved method 'abstract void loadSystemProperties()' of abstract class org.openqa.selenium.remote.service.DriverService$Builder.]]>
+              <![CDATA[chromedriver located at C://Users//Codetru//eclipse-workspace//SampleCodetruProject//Citizens_ProjectNewUpdated//BrowserDriver//chromedriver.exe, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: ChromeDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AbstractMethodError: Receiver class org.openqa.selenium.chrome.ChromeDriverService$Builder does not define or inherit an implementation of the resolved method 'abstract void loadSystemProperties()' of abstract class org.openqa.selenium.remote.service.DriverService$Builder.
-at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:509)
-at org.openqa.selenium.chrome.ChromeDriverService.createServiceWithConfig(ChromeDriverService.java:181)
+              <![CDATA[org.openqa.selenium.remote.NoSuchDriverException: chromedriver located at C://Users//Codetru//eclipse-workspace//SampleCodetruProject//Citizens_ProjectNewUpdated//BrowserDriver//chromedriver.exe, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:45)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:89)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
 at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:73)
-at TestCases.TestCases_of_CICA.chromeLaunch(TestCases_of_CICA.java:122)
+at TestCases.TestCases_of_CICA.chromeLaunch(TestCases_of_CICA.java:123)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -335,21 +423,32 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AbstractMethodError -->
+          </exception> <!-- org.openqa.selenium.remote.NoSuchDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Step_5 -->
-        <test-method signature="Step_6()[pri:8, instance:TestCases.TestCases_of_CICA@24269709]" started-at="2024-03-13T09:33:26 IST" name="Step_6" finished-at="2024-03-13T09:33:26 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.AbstractMethodError">
+        <test-method signature="Step_6()[pri:8, instance:TestCases.TestCases_of_CICA@6a78afa0]" started-at="2024-03-13T10:07:13 IST" name="Step_6" finished-at="2024-03-13T10:07:13 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.remote.NoSuchDriverException">
             <message>
-              <![CDATA[Receiver class org.openqa.selenium.chrome.ChromeDriverService$Builder does not define or inherit an implementation of the resolved method 'abstract void loadSystemProperties()' of abstract class org.openqa.selenium.remote.service.DriverService$Builder.]]>
+              <![CDATA[chromedriver located at C://Users//Codetru//eclipse-workspace//SampleCodetruProject//Citizens_ProjectNewUpdated//BrowserDriver//chromedriver.exe, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: ChromeDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AbstractMethodError: Receiver class org.openqa.selenium.chrome.ChromeDriverService$Builder does not define or inherit an implementation of the resolved method 'abstract void loadSystemProperties()' of abstract class org.openqa.selenium.remote.service.DriverService$Builder.
-at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:509)
-at org.openqa.selenium.chrome.ChromeDriverService.createServiceWithConfig(ChromeDriverService.java:181)
+              <![CDATA[org.openqa.selenium.remote.NoSuchDriverException: chromedriver located at C://Users//Codetru//eclipse-workspace//SampleCodetruProject//Citizens_ProjectNewUpdated//BrowserDriver//chromedriver.exe, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:45)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:89)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
 at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:73)
-at TestCases.TestCases_of_CICA.chromeLaunch(TestCases_of_CICA.java:122)
+at TestCases.TestCases_of_CICA.chromeLaunch(TestCases_of_CICA.java:123)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -376,21 +475,32 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AbstractMethodError -->
+          </exception> <!-- org.openqa.selenium.remote.NoSuchDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Step_6 -->
-        <test-method signature="Step_7()[pri:9, instance:TestCases.TestCases_of_CICA@24269709]" started-at="2024-03-13T09:33:26 IST" name="Step_7" finished-at="2024-03-13T09:33:26 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.AbstractMethodError">
+        <test-method signature="Step_7()[pri:9, instance:TestCases.TestCases_of_CICA@6a78afa0]" started-at="2024-03-13T10:07:13 IST" name="Step_7" finished-at="2024-03-13T10:07:13 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.remote.NoSuchDriverException">
             <message>
-              <![CDATA[Receiver class org.openqa.selenium.chrome.ChromeDriverService$Builder does not define or inherit an implementation of the resolved method 'abstract void loadSystemProperties()' of abstract class org.openqa.selenium.remote.service.DriverService$Builder.]]>
+              <![CDATA[chromedriver located at C://Users//Codetru//eclipse-workspace//SampleCodetruProject//Citizens_ProjectNewUpdated//BrowserDriver//chromedriver.exe, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: ChromeDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AbstractMethodError: Receiver class org.openqa.selenium.chrome.ChromeDriverService$Builder does not define or inherit an implementation of the resolved method 'abstract void loadSystemProperties()' of abstract class org.openqa.selenium.remote.service.DriverService$Builder.
-at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:509)
-at org.openqa.selenium.chrome.ChromeDriverService.createServiceWithConfig(ChromeDriverService.java:181)
+              <![CDATA[org.openqa.selenium.remote.NoSuchDriverException: chromedriver located at C://Users//Codetru//eclipse-workspace//SampleCodetruProject//Citizens_ProjectNewUpdated//BrowserDriver//chromedriver.exe, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:45)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:89)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
 at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:73)
-at TestCases.TestCases_of_CICA.chromeLaunch(TestCases_of_CICA.java:122)
+at TestCases.TestCases_of_CICA.chromeLaunch(TestCases_of_CICA.java:123)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -417,21 +527,32 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AbstractMethodError -->
+          </exception> <!-- org.openqa.selenium.remote.NoSuchDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Step_7 -->
-        <test-method signature="Step_8()[pri:10, instance:TestCases.TestCases_of_CICA@24269709]" started-at="2024-03-13T09:33:26 IST" name="Step_8" finished-at="2024-03-13T09:33:26 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.AbstractMethodError">
+        <test-method signature="Step_8()[pri:10, instance:TestCases.TestCases_of_CICA@6a78afa0]" started-at="2024-03-13T10:07:13 IST" name="Step_8" finished-at="2024-03-13T10:07:13 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.remote.NoSuchDriverException">
             <message>
-              <![CDATA[Receiver class org.openqa.selenium.chrome.ChromeDriverService$Builder does not define or inherit an implementation of the resolved method 'abstract void loadSystemProperties()' of abstract class org.openqa.selenium.remote.service.DriverService$Builder.]]>
+              <![CDATA[chromedriver located at C://Users//Codetru//eclipse-workspace//SampleCodetruProject//Citizens_ProjectNewUpdated//BrowserDriver//chromedriver.exe, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: ChromeDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AbstractMethodError: Receiver class org.openqa.selenium.chrome.ChromeDriverService$Builder does not define or inherit an implementation of the resolved method 'abstract void loadSystemProperties()' of abstract class org.openqa.selenium.remote.service.DriverService$Builder.
-at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:509)
-at org.openqa.selenium.chrome.ChromeDriverService.createServiceWithConfig(ChromeDriverService.java:181)
+              <![CDATA[org.openqa.selenium.remote.NoSuchDriverException: chromedriver located at C://Users//Codetru//eclipse-workspace//SampleCodetruProject//Citizens_ProjectNewUpdated//BrowserDriver//chromedriver.exe, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:45)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:89)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
 at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:73)
-at TestCases.TestCases_of_CICA.chromeLaunch(TestCases_of_CICA.java:122)
+at TestCases.TestCases_of_CICA.chromeLaunch(TestCases_of_CICA.java:123)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -458,21 +579,32 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AbstractMethodError -->
+          </exception> <!-- org.openqa.selenium.remote.NoSuchDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Step_8 -->
-        <test-method signature="Update()[pri:11, instance:TestCases.TestCases_of_CICA@24269709]" started-at="2024-03-13T09:33:26 IST" name="Update" finished-at="2024-03-13T09:33:26 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.AbstractMethodError">
+        <test-method signature="Update()[pri:11, instance:TestCases.TestCases_of_CICA@6a78afa0]" started-at="2024-03-13T10:07:13 IST" name="Update" finished-at="2024-03-13T10:07:13 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.remote.NoSuchDriverException">
             <message>
-              <![CDATA[Receiver class org.openqa.selenium.chrome.ChromeDriverService$Builder does not define or inherit an implementation of the resolved method 'abstract void loadSystemProperties()' of abstract class org.openqa.selenium.remote.service.DriverService$Builder.]]>
+              <![CDATA[chromedriver located at C://Users//Codetru//eclipse-workspace//SampleCodetruProject//Citizens_ProjectNewUpdated//BrowserDriver//chromedriver.exe, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: ChromeDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AbstractMethodError: Receiver class org.openqa.selenium.chrome.ChromeDriverService$Builder does not define or inherit an implementation of the resolved method 'abstract void loadSystemProperties()' of abstract class org.openqa.selenium.remote.service.DriverService$Builder.
-at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:509)
-at org.openqa.selenium.chrome.ChromeDriverService.createServiceWithConfig(ChromeDriverService.java:181)
+              <![CDATA[org.openqa.selenium.remote.NoSuchDriverException: chromedriver located at C://Users//Codetru//eclipse-workspace//SampleCodetruProject//Citizens_ProjectNewUpdated//BrowserDriver//chromedriver.exe, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:45)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:89)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
 at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:73)
-at TestCases.TestCases_of_CICA.chromeLaunch(TestCases_of_CICA.java:122)
+at TestCases.TestCases_of_CICA.chromeLaunch(TestCases_of_CICA.java:123)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -499,21 +631,32 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AbstractMethodError -->
+          </exception> <!-- org.openqa.selenium.remote.NoSuchDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Update -->
-        <test-method signature="Step_10()[pri:12, instance:TestCases.TestCases_of_CICA@24269709]" started-at="2024-03-13T09:33:26 IST" name="Step_10" finished-at="2024-03-13T09:33:26 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.AbstractMethodError">
+        <test-method signature="Step_10()[pri:12, instance:TestCases.TestCases_of_CICA@6a78afa0]" started-at="2024-03-13T10:07:13 IST" name="Step_10" finished-at="2024-03-13T10:07:13 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.remote.NoSuchDriverException">
             <message>
-              <![CDATA[Receiver class org.openqa.selenium.chrome.ChromeDriverService$Builder does not define or inherit an implementation of the resolved method 'abstract void loadSystemProperties()' of abstract class org.openqa.selenium.remote.service.DriverService$Builder.]]>
+              <![CDATA[chromedriver located at C://Users//Codetru//eclipse-workspace//SampleCodetruProject//Citizens_ProjectNewUpdated//BrowserDriver//chromedriver.exe, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: ChromeDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AbstractMethodError: Receiver class org.openqa.selenium.chrome.ChromeDriverService$Builder does not define or inherit an implementation of the resolved method 'abstract void loadSystemProperties()' of abstract class org.openqa.selenium.remote.service.DriverService$Builder.
-at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:509)
-at org.openqa.selenium.chrome.ChromeDriverService.createServiceWithConfig(ChromeDriverService.java:181)
+              <![CDATA[org.openqa.selenium.remote.NoSuchDriverException: chromedriver located at C://Users//Codetru//eclipse-workspace//SampleCodetruProject//Citizens_ProjectNewUpdated//BrowserDriver//chromedriver.exe, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:45)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:89)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
 at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:73)
-at TestCases.TestCases_of_CICA.chromeLaunch(TestCases_of_CICA.java:122)
+at TestCases.TestCases_of_CICA.chromeLaunch(TestCases_of_CICA.java:123)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -540,11 +683,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AbstractMethodError -->
+          </exception> <!-- org.openqa.selenium.remote.NoSuchDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Step_10 -->
-        <test-method is-config="true" signature="teardown1()[pri:0, instance:TestCases.TestCases_of_CICA@24269709]" started-at="2024-03-13T09:33:26 IST" name="teardown1" finished-at="2024-03-13T09:33:26 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="teardown1()[pri:0, instance:TestCases.TestCases_of_CICA@6a78afa0]" started-at="2024-03-13T10:07:13 IST" name="teardown1" finished-at="2024-03-13T10:07:13 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown1 -->

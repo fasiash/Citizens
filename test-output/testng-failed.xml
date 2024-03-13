@@ -9,10 +9,10 @@
           <include name="Step_10"/>
           <include name="Step_4"/>
           <include name="Step_1"/>
-          <include name="Homepage"/>
           <include name="Update"/>
-          <include name="Login"/>
+          <include name="Homepage"/>
           <include name="ExtentReportSetup1"/>
+          <include name="Login"/>
           <include name="chromeLaunch"/>
           <include name="teardown1"/>
           <include name="Step_7"/>
