@@ -115,11 +115,12 @@ public class TestCases_of_CICA{
 	@BeforeTest
 	public void chromeLaunch() {
 //		WebDriverManager.chromedriver().setup();
-//        System.setProperty("webdriver.chrome.driver", "C://Users//Codetru//eclipse-workspace//SampleCodetruProject//Citizens_ProjectNewUpdated//BrowserDriver//chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C://Users//Codetru//eclipse-workspace//SampleCodetruProject//Citizens_ProjectNewUpdated//BrowserDriver//chromedriver.exe");
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--allow-running-insecure-content");
 		options.addArguments("--remote-allow-origins=*");
 		options.addArguments("--incognito");
+		options.setBinary("C:\\Users\\Codetru\\Downloads\\chrome-win64\\chrome-win64\\chrome.exe");
 		driver = new ChromeDriver(options);
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();	
