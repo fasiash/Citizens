@@ -15,6 +15,7 @@ import utils.Extent_Reports;
 public class T_Edit_and_Submit {
 	public 	WebDriver driver;
 	
+	
 	public	Extent_Reports e = new Extent_Reports(driver);
 	public	Excel_Util data = new Excel_Util();	
 
@@ -52,7 +53,7 @@ public class T_Edit_and_Submit {
 	WebElement NextStep4; 
 	
     public void Edit_Submit() throws Exception 
-    {
+    {	Thread.sleep(1000);
     	WebElement ApplicationModule1=driver.findElement(By.id("applicationButton"));
 		Thread.sleep(2000);
 		ApplicationModule1.click();
@@ -60,12 +61,12 @@ public class T_Edit_and_Submit {
 		WebElement List_application1=driver.findElement(By.xpath("//div[@class='applicationDropdown']/div[1]"));
 		Thread.sleep(2000);
 		List_application1.click();
-		Thread.sleep(3000);
-//		WebElement ListEdit_application1	=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//td[.='$9,069.00']/parent::tr/td/ion-button[@title='Edit Application']")));
+		Thread.sleep(2000);
+		Actions act =new Actions(driver);
+		act.scrollToElement(ListEdit_application1).build().perform();
 		Thread.sleep(2000);
 		ListEdit_application1.click();
 		Thread.sleep(2000);
-
     	Upload_Application.click();
 		Thread.sleep(2000);
 		

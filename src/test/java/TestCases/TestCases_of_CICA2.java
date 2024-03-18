@@ -1,6 +1,7 @@
 package TestCases;
 
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -87,27 +88,27 @@ public class TestCases_of_CICA2{
 
 	}
 
-//	@Test(priority = 9)
-//	public void Step_7() throws Exception {
-//		Step_7Page user = new Step_7Page(driver, Reports);
-//		user.Remarks();
-//
-//	}
-
-//	@Test(priority = 9)
-//	public void Step_8() throws Exception {
-//		Step_8Page user = new Step_8Page(driver, Reports);
-//		user.Disclosure_and_Signature();
-//
-//	}
-
 	@Test(priority = 9)
+	public void Step_7() throws Exception {
+		Step_7Page user = new Step_7Page(driver, Reports);
+		user.Remarks();
+
+	}
+
+	@Test(priority = 10)
+	public void Step_8() throws Exception {
+		Step_8PageRedirection user = new Step_8PageRedirection(driver, Reports);
+		user.Disclosure_and_Signature();
+
+	}
+
+	@Test(priority = 11)
 	public void Update() throws Exception {
 		T_Edit_and_Submit user = new T_Edit_and_Submit(driver, Reports);
 		user.Edit_Submit();
 
 	}
-	@Test(priority = 10)
+	@Test(priority = 12)
 	public void Step_10() throws Exception {
 		Step_9Page user = new Step_9Page(driver, Reports);
 		user.Make_a_Payment();
@@ -119,7 +120,6 @@ public class TestCases_of_CICA2{
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--allow-running-insecure-content");
 		options.addArguments("--remote-allow-origins=*");
-		options.addArguments("--incognito");
 		driver = new ChromeDriver(options);
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
@@ -127,14 +127,14 @@ public class TestCases_of_CICA2{
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));		
 	}
 
-//	@AfterTest
-//	public void closebrowser() throws Exception {
-//		driver.quit();
-//	}
+	@AfterTest
+	public void closebrowser() throws Exception {
+		driver.quit();
+	}
 
 	@AfterSuite
 	public void teardown1() throws Exception {
 		Reports.teardown();
-		Desktop.getDesktop().browse(new File("Citizens.htm").toURI());
+		Desktop.getDesktop().browse(new File("Citizens.html").toURI());
 	}
 }

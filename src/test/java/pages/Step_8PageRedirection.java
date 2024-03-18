@@ -95,13 +95,22 @@ public class Step_8PageRedirection {
 			C.Mandate_Click2(driver, act, NextStep8,Error_SignedCity, e, Test.Case8(1), Test.Exp8(1));
 	
 			C.Empty_Input(driver, Error_SignedCity, Mandatory_Err, e, Test.Case8(4), Test.Exp8(4));
-	
+			Thread.sleep(1000);	
+			WebElement ContinueButton =driver.findElement(By.xpath("//span[text()='Continue']"));
 			Thread.sleep(1000);
-	
+			ContinueButton.click();
+			Thread.sleep(1000);
+			act.moveToElement(signedCity).build().perform();
+			act.moveToElement(ProposedInsurerSignature).build().perform();
+			C.Fields(driver, ProposedInsurerSignature, e,  Test.Case8(5), Test.Exp8(5));
+			C.Fields(driver, ProposedInsurerSignature, e,  Test.Case8(8), Test.Exp8(8));
+			C.Fields(driver, ProposedInsurerSignature, e,  Test.Case8(9), Test.Exp8(9));
+			C.Fields(driver, ProposedInsurerSignature, e,  Test.Case8(10), Test.Exp8(10));
+			C.Fields(driver, ProposedInsurerSignature, e,  Test.Case8(15), Test.Exp8(15));
 			C.Max_Char_Act(driver, act, signedCity, Error_SignedCity, Max_Name,Max_error_, e, Test.Case8(3), Test.Exp8(3));
-	
+			act.moveToElement(signedCity).build().perform();
 			C.Send_verify_Valid_C(driver, signedCity, e, "Testing Codetru", Test.Case8(2), Test.Exp8(2));
-			
+			act.moveToElement(signedCity).build().perform();
 			C.Fields(driver, signedCity, e,  Test.Case8(4), Test.Exp8(4));
 			
 			C.Fields(driver, ProposedInsurerSignature, e,  Test.Case8(6), Test.Exp8(6));
@@ -111,6 +120,11 @@ public class Step_8PageRedirection {
 			C.act_scroll2(driver, act, Error_SignatureProposedInsurer, HoldDateRadioButton_No, e, Test.Case8(38), Test.Exp8(38));
 	
 			C.Empty_Input(driver, Error_SignatureProposedInsurer, Mandatory_Err, e, Test.Case8(39), Test.Exp8(39));
+			C.Fields(driver, ProposedInsurerSignature, e,  Test.Case8(14), Test.Exp8(14));
+			C.Fields(driver, ProposedInsurerSignature, e,  Test.Case8(23), Test.Exp8(23));
+			C.Fields(driver, ProposedInsurerSignature, e,  Test.Case8(24), Test.Exp8(24));
+			C.Fields(driver, ProposedInsurerSignature, e,  Test.Case8(25), Test.Exp8(25));
+			C.Fields(driver, ProposedInsurerSignature, e,  Test.Case8(26), Test.Exp8(26));
 			
 			C.Fields(driver, ProposedInsurerSignature, e,  Test.Case8(11), Test.Exp8(11));
 	
@@ -120,8 +134,12 @@ public class Step_8PageRedirection {
 			
 			C.Fields(driver, ProposedInsurerSignature, e,  Test.Case8(13), Test.Exp8(13));
 			
-			C.Fields(driver, ProposedInsurerSignature, e,  Test.Case8(14), Test.Exp8(14));
-	
+			
+			C.Fields(driver, ProposedInsurerSignature, e,  Test.Case8(29), Test.Exp8(29));
+			C.Fields(driver, ProposedInsurerSignature, e,  Test.Case8(30), Test.Exp8(30));
+			C.Fields(driver, ProposedInsurerSignature, e,  Test.Case8(31), Test.Exp8(31));
+			C.Fields(driver, ProposedInsurerSignature, e,  Test.Case8(32), Test.Exp8(32));
+			C.Fields(driver, ProposedInsurerSignature, e,  Test.Case8(5), Test.Exp8(5));
 			C.act_scroll1(driver, act, Error_HoldUntillDate, e, Test.Case8(40), Test.Exp8(40));
 	
 			C.Empty_Input(driver, Error_HoldUntillDate, "Hold Date required or click No for delayed payment",e, Test.Case8(17), Test.Exp8(17));
@@ -141,7 +159,9 @@ public class Step_8PageRedirection {
 			C.Signature(driver, act, SignatureOfAgent, signature_pad2, Padding_Right2, Sign2,
 					25, 25, 35, 30, 16, 26, -76, -26, 18, 56, -52, -36, -21,-25, 36, 26, 112, 56, e,
 					Test.Case8(27), Test.Exp8(27));
-			
+		
+			C.Fields(driver, ProposedInsurerSignature, e,  Test.Case8(16), Test.Exp8(16));
+			C.Fields(driver, ProposedInsurerSignature, e,  Test.Case8(18), Test.Exp8(18));
 			C.Fields(driver, ProposedInsurerSignature, e,  Test.Case8(28), Test.Exp8(28));
 			
 			C.Fields(driver, ProposedInsurerSignature, e,  Test.Case8(35), Test.Exp8(35));
@@ -149,22 +169,8 @@ public class Step_8PageRedirection {
 			Thread.sleep(2000);
 			C.Fields(driver, ProposedInsurerSignature, e,  Test.Case8(39), Test.Exp8(39));
 			C.Click_Displayed(driver, NextStep8, application_btn, e, Test.Case8(36), Test.Exp8(36));
-			Thread.sleep(4000);
-			C.Fields(driver, ProposedInsurerSignature, e,  Test.Case8(5), Test.Exp8(5));
-			C.Fields(driver, ProposedInsurerSignature, e,  Test.Case8(8), Test.Exp8(8));
-			C.Fields(driver, ProposedInsurerSignature, e,  Test.Case8(9), Test.Exp8(9));
-			C.Fields(driver, ProposedInsurerSignature, e,  Test.Case8(10), Test.Exp8(10));
-			C.Fields(driver, ProposedInsurerSignature, e,  Test.Case8(15), Test.Exp8(15));
-			C.Fields(driver, ProposedInsurerSignature, e,  Test.Case8(16), Test.Exp8(16));
-			C.Fields(driver, ProposedInsurerSignature, e,  Test.Case8(18), Test.Exp8(18));
-			C.Fields(driver, ProposedInsurerSignature, e,  Test.Case8(23), Test.Exp8(23));
-			C.Fields(driver, ProposedInsurerSignature, e,  Test.Case8(24), Test.Exp8(24));
-			C.Fields(driver, ProposedInsurerSignature, e,  Test.Case8(25), Test.Exp8(25));
-			C.Fields(driver, ProposedInsurerSignature, e,  Test.Case8(26), Test.Exp8(26));
-			C.Fields(driver, ProposedInsurerSignature, e,  Test.Case8(29), Test.Exp8(29));
-			C.Fields(driver, ProposedInsurerSignature, e,  Test.Case8(30), Test.Exp8(30));
-			C.Fields(driver, ProposedInsurerSignature, e,  Test.Case8(31), Test.Exp8(31));
-			C.Fields(driver, ProposedInsurerSignature, e,  Test.Case8(32), Test.Exp8(32));
-			C.Fields(driver, ProposedInsurerSignature, e,  Test.Case8(5), Test.Exp8(5));
+			Thread.sleep(1000);
+//			NextStep8.click();
+		
 		}
 }

@@ -128,13 +128,14 @@ public class Step_6PageRedirection {
 			C.Health_Question_M(driver, act, Error_HealthQuestions_4,Mandatory_Err, e, Test.Case6(12), Test.Exp6(12));
 
 			C.Health_Question_M(driver, act, Error_HealthQuestions_5,Mandatory_Err, e, Test.Case6(15), Test.Exp6(15));
-
+			act.scrollToElement(Error_HealthQuestions_5).build().perform();
 			C.Health_Question_M(driver, act, Error_HealthQuestions_6,Mandatory_Err, e, Test.Case6(18), Test.Exp6(18));
 
 			C.Health_Question_M(driver, act, Error_HealthQuestions_7,Mandatory_Err, e, Test.Case6(21), Test.Exp6(21));
 
 			C.Health_Question_M(driver, act, Error_HealthQuestions_8,Mandatory_Err, e, Test.Case6(24), Test.Exp6(24));
-			
+			act.scrollToElement(Error_HealthQuestions_8).build().perform();
+
 			C.Health_Question_C(driver, act, HealthQuestions1, "1", e, Test.Case6(2), Test.Exp6(2));
 
 			C.Health_Question_C(driver, act, HealthQuestions2, "2", e, Test.Case6(5), Test.Exp6(5));
@@ -252,92 +253,92 @@ public class Step_6PageRedirection {
 			WebElement nextstep7_Again = driver.findElement(By.xpath("(//ion-row[@style='padding-left: 50px;']/ion-col[@class='md hydrated']/ion-button)[7]"));
 			Thread.sleep(1000);
 			nextstep7_Again.click();
-			WebElement nextstep8=driver.findElement(By.xpath("(//ion-row[@style='padding-left: 50px;']/ion-col[@class='md hydrated']/ion-button)[8]"));
-			act.moveToElement(nextstep8).build().perform();
-//			nextstep8.click();
-			
 //			WebElement nextstep8=driver.findElement(By.xpath("(//ion-row[@style='padding-left: 50px;']/ion-col[@class='md hydrated']/ion-button)[8]"));
-			act.moveToElement(nextstep8).build().perform();
+//			act.moveToElement(nextstep8).build().perform();
+////			nextstep8.click();
+//			
+////			WebElement nextstep8=driver.findElement(By.xpath("(//ion-row[@style='padding-left: 50px;']/ion-col[@class='md hydrated']/ion-button)[8]"));
+//			act.moveToElement(nextstep8).build().perform();
+////			nextstep8.click();
+//			WebElement signedCity =driver.findElement(By.xpath("//ion-input[@formcontrolname='SignedCity']/input"));
+//			act.moveToElement(signedCity).build().perform();
+//			WebElement HoldDateRadioButton_No=driver.findElement(By.xpath("//ion-radio-group[@formcontrolname='HoldDateCheckBox']/ion-row/ion-col[2]/ion-item"));
+//			WebElement Error_SignedCity=driver.findElement(By.xpath("(//ion-col[@class = 'md hydrated' and @size-md = '12' and @size='24'])[4]"));
+//			act.scrollToElement(Error_SignedCity).build().perform();
+//			Assert.assertTrue(Error_SignedCity.isDisplayed());
+//			String LabelErrorSignedCity_Text=Error_SignedCity.getText();
+//			System.out.println(LabelErrorSignedCity_Text);
+//			Thread.sleep(1000);
+//			signedCity.sendKeys("ggdssadfkjgfhfsahklklasfkhalkfhlkasfhlkasfhlkafhlkasfhlkasfhlkasfh");
+//			act.scrollToElement(Error_SignedCity).build().perform();
+//			Assert.assertTrue(Error_SignedCity.isDisplayed());
+//			String LabelError_MaximumSignedCity_Text=Error_SignedCity.getText();
+//			System.out.println(LabelError_MaximumSignedCity_Text);
+//			signedCity.clear();
+//			signedCity.sendKeys("Testing Codetru");
+//			WebElement Error_SignatureProposedInsurer=driver.findElement(By.xpath("(//h3[text()='Signature']/following-sibling::ion-row[2]/ion-col[@size='24' and @size-md='6'])[1]"));
+//			act.scrollToElement(Error_SignatureProposedInsurer).build().perform();
+//			act.scrollToElement(HoldDateRadioButton_No).build().perform();
+//			Assert.assertTrue(Error_SignatureProposedInsurer.isDisplayed());
+//			String LabelErrorSignatureProposedInsurer_Text=Error_SignatureProposedInsurer.getText();
+//			System.out.println(LabelErrorSignatureProposedInsurer_Text);
+//			WebElement ProposedInsurerSignature=driver.findElement(By.xpath("//h3[.='Signature']/following-sibling::ion-row[2]/ion-col/div/ion-button"));
+//			ProposedInsurerSignature.click();
+//			WebElement	signature_pad1= driver.findElement(By.xpath("(//canvas[@class='signature-pad-canvas hidden-xs-down'])[1]"));
+//			Thread.sleep(1000);
+//			act.clickAndHold(signature_pad1)
+//			.moveByOffset(25, 25)
+//			.moveByOffset(35, 30)
+//			.moveByOffset(16, 26)
+//			.moveByOffset(-76, -26)
+//			.moveByOffset(18, 56)
+//			.moveByOffset(-52, -36)
+//			.moveByOffset(-21,-25)
+//			.moveByOffset(36, 26)
+//			.moveByOffset(-54, 56)
+//			.release()
+//			.build()
+//			.perform();
+//			driver.findElement(By.xpath("(//ion-col[@style='padding-right: 20px;']/ion-button)[1]")).click();
+//			WebElement Error_HoldUntillDate=driver.findElement(By.xpath("(//ion-col[@class = 'md hydrated' and @size-md = '12' and @size='24'])[6]"));
+//			act.scrollToElement(Error_HoldUntillDate).build().perform();
+//			Assert.assertTrue(Error_HoldUntillDate.isDisplayed());
+//			String LabelErrorHoldUntillDate_Text=Error_HoldUntillDate.getText();
+//			System.out.println(LabelErrorHoldUntillDate_Text);
+//			HoldDateRadioButton_No.click();
+//			act.scrollToElement(nextstep8).build().perform();
+//			WebElement Error_SignatureOfAgent=driver.findElement(By.xpath("//h3[text()='Agent']/following-sibling::ion-row/ion-col[4][@size='24']"));
+//			Assert.assertTrue(Error_SignatureOfAgent.isDisplayed());
+//			String LabelErrorSignatuerOfAgent_Text=Error_SignatureOfAgent.getText();
+//			System.out.println(LabelErrorSignatuerOfAgent_Text);
+//			Thread.sleep(1000);
+//			WebElement SignatureOfAgent=driver.findElement(By.xpath("//div/h3[.='Agent']/following-sibling::ion-row/ion-col[4]/div/ion-button"));
+//			SignatureOfAgent.click();
+//			WebElement signature_pad2=driver.findElement(By.xpath("//canvas[@class='signature-pad-canvas hidden-xs-down']"));
+//			Thread.sleep(1000);
+//			act.clickAndHold(signature_pad2)
+//			.moveByOffset(25, 25)
+//			.moveByOffset(35, 30)
+//			.moveByOffset(16, 26)
+//			.moveByOffset(-76, -26)
+//			.moveByOffset(18, 56)
+//			.moveByOffset(-52, -36)
+//			.moveByOffset(-21,-25)
+//			.moveByOffset(36, 26)
+//			.moveByOffset(112, 56)
+//			.release()
+//			.build()
+//			.perform();
+//			driver.findElement(By.xpath("(//ion-col[@style='padding-right: 20px;']/ion-button)[1]")).click();
+//			Thread.sleep(1000);
 //			nextstep8.click();
-			WebElement signedCity =driver.findElement(By.xpath("//ion-input[@formcontrolname='SignedCity']/input"));
-			act.moveToElement(signedCity).build().perform();
-			WebElement HoldDateRadioButton_No=driver.findElement(By.xpath("//ion-radio-group[@formcontrolname='HoldDateCheckBox']/ion-row/ion-col[2]/ion-item"));
-			WebElement Error_SignedCity=driver.findElement(By.xpath("(//ion-col[@class = 'md hydrated' and @size-md = '12' and @size='24'])[4]"));
-			act.scrollToElement(Error_SignedCity).build().perform();
-			Assert.assertTrue(Error_SignedCity.isDisplayed());
-			String LabelErrorSignedCity_Text=Error_SignedCity.getText();
-			System.out.println(LabelErrorSignedCity_Text);
-			Thread.sleep(1000);
-			signedCity.sendKeys("ggdssadfkjgfhfsahklklasfkhalkfhlkasfhlkasfhlkafhlkasfhlkasfhlkasfh");
-			act.scrollToElement(Error_SignedCity).build().perform();
-			Assert.assertTrue(Error_SignedCity.isDisplayed());
-			String LabelError_MaximumSignedCity_Text=Error_SignedCity.getText();
-			System.out.println(LabelError_MaximumSignedCity_Text);
-			signedCity.clear();
-			signedCity.sendKeys("Testing Codetru");
-			WebElement Error_SignatureProposedInsurer=driver.findElement(By.xpath("(//h3[text()='Signature']/following-sibling::ion-row[2]/ion-col[@size='24' and @size-md='6'])[1]"));
-			act.scrollToElement(Error_SignatureProposedInsurer).build().perform();
-			act.scrollToElement(HoldDateRadioButton_No).build().perform();
-			Assert.assertTrue(Error_SignatureProposedInsurer.isDisplayed());
-			String LabelErrorSignatureProposedInsurer_Text=Error_SignatureProposedInsurer.getText();
-			System.out.println(LabelErrorSignatureProposedInsurer_Text);
-			WebElement ProposedInsurerSignature=driver.findElement(By.xpath("//h3[.='Signature']/following-sibling::ion-row[2]/ion-col/div/ion-button"));
-			ProposedInsurerSignature.click();
-			WebElement	signature_pad1= driver.findElement(By.xpath("(//canvas[@class='signature-pad-canvas hidden-xs-down'])[1]"));
-			Thread.sleep(1000);
-			act.clickAndHold(signature_pad1)
-			.moveByOffset(25, 25)
-			.moveByOffset(35, 30)
-			.moveByOffset(16, 26)
-			.moveByOffset(-76, -26)
-			.moveByOffset(18, 56)
-			.moveByOffset(-52, -36)
-			.moveByOffset(-21,-25)
-			.moveByOffset(36, 26)
-			.moveByOffset(-54, 56)
-			.release()
-			.build()
-			.perform();
-			driver.findElement(By.xpath("(//ion-col[@style='padding-right: 20px;']/ion-button)[1]")).click();
-			WebElement Error_HoldUntillDate=driver.findElement(By.xpath("(//ion-col[@class = 'md hydrated' and @size-md = '12' and @size='24'])[6]"));
-			act.scrollToElement(Error_HoldUntillDate).build().perform();
-			Assert.assertTrue(Error_HoldUntillDate.isDisplayed());
-			String LabelErrorHoldUntillDate_Text=Error_HoldUntillDate.getText();
-			System.out.println(LabelErrorHoldUntillDate_Text);
-			HoldDateRadioButton_No.click();
-			act.scrollToElement(nextstep8).build().perform();
-			WebElement Error_SignatureOfAgent=driver.findElement(By.xpath("//h3[text()='Agent']/following-sibling::ion-row/ion-col[4][@size='24']"));
-			Assert.assertTrue(Error_SignatureOfAgent.isDisplayed());
-			String LabelErrorSignatuerOfAgent_Text=Error_SignatureOfAgent.getText();
-			System.out.println(LabelErrorSignatuerOfAgent_Text);
-			Thread.sleep(1000);
-			WebElement SignatureOfAgent=driver.findElement(By.xpath("//div/h3[.='Agent']/following-sibling::ion-row/ion-col[4]/div/ion-button"));
-			SignatureOfAgent.click();
-			WebElement signature_pad2=driver.findElement(By.xpath("//canvas[@class='signature-pad-canvas hidden-xs-down']"));
-			Thread.sleep(1000);
-			act.clickAndHold(signature_pad2)
-			.moveByOffset(25, 25)
-			.moveByOffset(35, 30)
-			.moveByOffset(16, 26)
-			.moveByOffset(-76, -26)
-			.moveByOffset(18, 56)
-			.moveByOffset(-52, -36)
-			.moveByOffset(-21,-25)
-			.moveByOffset(36, 26)
-			.moveByOffset(112, 56)
-			.release()
-			.build()
-			.perform();
-			driver.findElement(By.xpath("(//ion-col[@style='padding-right: 20px;']/ion-button)[1]")).click();
-			Thread.sleep(1000);
-			nextstep8.click();
-		
-			Thread.sleep(1000);
-			WebElement Step_8=driver.findElement(By.xpath("//span[text()='Step 8: Upload Application ']"));
-			Thread.sleep(1000);
-			Step_8.click();
-			Thread.sleep(1000);
-			
+//		
+//			Thread.sleep(1000);
+//			WebElement Step_8=driver.findElement(By.xpath("//span[text()='Step 8: Upload Application ']"));
+//			Thread.sleep(1000);
+//			Step_8.click();
+//			Thread.sleep(1000);
+//			
 
 	}
 }

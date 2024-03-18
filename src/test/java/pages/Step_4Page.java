@@ -159,24 +159,21 @@ public class Step_4Page {
 		C.Scroll_C_scroll2(driver, act,NextStep4 , BenificiaryFirstname, e, Test.Case4(50), Test.Exp4(50));
 
 		C.Empty_Input(driver, Error_BenificicartFirstName_Message,Mandatory_Error , e, Test.Case4(5), Test.Exp4(5));
-		C.Fields(driver, BenificiaryFirstname, e, Test.Case4(1), Test.Exp4(1));
-		C.Fields(driver, BenificiaryFirstname, e, Test.Case4(2), Test.Exp4(2));
-		C.Fields(driver, BenificiaryFirstname, e, Test.Case4(59), Test.Exp4(59));
-		C.Fields(driver, BenificiaryFirstname, e, Test.Case4(60), Test.Exp4(59));
+		
 
 		C.Max_Char(driver, BenificiaryFirstname, Error_BenificicartFirstName_Message, Max_Name,Max_error, e, Test.Case4(4), Test.Exp4(4));
 
-		C.Send_verify_Valid_C(driver, BenificiaryFirstname, e, "Ludie Cormier", Test.Case4(3), Test.Exp4(3));
+		C.Send_verify_Valid_C(driver, BenificiaryFirstname, e, "Perry", Test.Case4(3), Test.Exp4(3));
 
 		C.Max_Char(driver, BenificiaryMiddlename, Error_BenificicartMiddleName_Message, Max_Name,Max_error, e, Test.Case4(7), Test.Exp4(7));
 
-		C.Send_verify_Valid_C(driver, BenificiaryMiddlename, e, "Testing", Test.Case4(6), Test.Exp4(6));
+		C.Send_verify_Valid_C(driver, BenificiaryMiddlename, e, "Cannyse", Test.Case4(6), Test.Exp4(6));
 
 		C.Empty_Input(driver, Error_BenificicaryLastName_Message,Mandatory_Error , e, Test.Case4(10), Test.Exp4(10));
 
 		C.Max_Char(driver, BenificiaryLastname, Error_BenificicaryLastName_Message, Max_Name,Max_error, e, Test.Case4(9), Test.Exp4(9));
 
-		C.Send_verify_Valid_C(driver, BenificiaryLastname, e, "Ludie Cormier", Test.Case4(8), Test.Exp4(8));
+		C.Send_verify_Valid_C(driver, BenificiaryLastname, e, "Cormier", Test.Case4(8), Test.Exp4(8));
 
 		C.Empty_Input(driver, Error_BenificicaryAddress_1_Message,Mandatory_Error, e, Test.Case4(12), Test.Exp4(12));
 
@@ -194,7 +191,7 @@ public class Step_4Page {
 
 		C.Max_Char(driver, BenificiaryCity, Error_BenificicaryCity_Message, Max_Name,Max_error, e, Test.Case4(54), Test.Exp4(54));
 
-		C.Send_verify_Valid_C(driver, BenificiaryCity, e, "Springfield", Test.Case4(55), Test.Exp4(55));
+		C.Send_verify_Valid_C(driver, BenificiaryCity, e, "Arizona City", Test.Case4(55), Test.Exp4(55));
 
 		C.Empty_Input(driver, Error_BenificicaryState_Message,Mandatory_Error, e, Test.Case4(56), Test.Exp4(56));
 
@@ -232,7 +229,10 @@ public class Step_4Page {
 
 		C.Max_Char(driver, BenificiarySSN, Error_Message_MinimumBenificiarySSN, "123455874512", 
 				Max_error_ssn, e, Test.Case4(37), Test.Exp4(37));
-
+		C.Fields(driver, BenificiaryFirstname, e, Test.Case4(1), Test.Exp4(1));
+		C.Fields(driver, BenificiaryFirstname, e, Test.Case4(2), Test.Exp4(2));
+		C.Fields(driver, BenificiaryFirstname, e, Test.Case4(59), Test.Exp4(59));
+		C.Fields(driver, BenificiaryFirstname, e, Test.Case4(60), Test.Exp4(59));
 		C.Send_verify_Valid_C(driver, BenificiarySSN, e, "345845123", Test.Case4(34), Test.Exp4(34));
 
 		C.Empty_Input(driver, Error_Message_BenificiaryDOB,Mandatory_Error , e, Test.Case4(40), Test.Exp4(40));

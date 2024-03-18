@@ -172,7 +172,7 @@ public class Step_1Page {
 		String Fc_MnErr = "The minimum amount is 1000.";
 
 		Thread.sleep(3000);
-
+		
 		C.Scroll_C_scroll2(driver, act, calculate, Page_Error, e, Test.Case1(58),Test.Exp1(58));
 
 		C.Get_Verify(driver, Page_Error, Page_Error_, e, Test.Case1(58),Test.Exp1(58));
@@ -183,17 +183,17 @@ public class Step_1Page {
 
 		C.Max_Char(driver, FirstName, Error_Message_FirstName, Max_Char,  Max_Error, e, Test.Case1(2), Test.Exp1(2));
 
-		C.Send_verify_Valid_C(driver, FirstName, e, "Mary", Test.Case1(1), Test.Exp1(1));
+		C.Send_verify_Valid_C(driver, FirstName, e, "Jass", Test.Case1(1), Test.Exp1(1));
 
 		C.Max_Char(driver, MiddleName, Error_Message_MiddleName, Max_Char,  Max_Error, e,Test.Case1(5) ,Test.Exp1(5));
 
-		C.Send_verify_Valid_C(driver, MiddleName, e, "Sam", Test.Case1(2),Test.Exp1(2));
+		C.Send_verify_Valid_C(driver, MiddleName, e, "Cod", Test.Case1(2),Test.Exp1(2));
 
 		C.Empty_Input(driver, Error_Message_LastName, Mandate_Error, e, Test.Case1(8),Test.Case1(8));
 
 		C.Max_Char(driver, LastName, Error_Message_LastName, Max_Char,  Max_Error, e, Test.Case1(7), Test.Case1(7));
 
-		C.Send_verify_Valid_C(driver, LastName, e, "Currun",  Test.Case1(6),Test.Exp1(6));
+		C.Send_verify_Valid_C(driver, LastName, e, "Markan",  Test.Case1(6),Test.Exp1(6));
 
 		C.Empty_Input(driver, Error_Message_State, Mandate_Error, e,  Test.Case1(11),Test.Exp1(11));		 
 
@@ -253,7 +253,7 @@ public class Step_1Page {
 
 		C.SC_C_Send(driver, act, calculate,FaceAmount, ErrorMessage_FaceAmount, "999", Fc_MnErr, e, Test.Case1(35),Test.Exp1(35));
 
-		C.Send_verify_Valid_C(driver, FaceAmount, e, "2354", Test.Case1(32),Test.Exp1(32));
+		C.Send_verify_Valid_C(driver, FaceAmount, e, "3001", Test.Case1(32),Test.Exp1(32));
 
 		C.Clk_Is_Enabled(driver, Annually, e,  Test.Case1(42),Test.Exp1(42));
 		C.Clk_Is_Enabled(driver, Semi_Annually, e,  Test.Case1(43),Test.Exp1(43));
@@ -266,3 +266,6 @@ public class Step_1Page {
 		//Nextstep_1.click();
 	}
 }
+
+
+

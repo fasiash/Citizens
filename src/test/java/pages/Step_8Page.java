@@ -111,10 +111,14 @@ public class Step_8Page {
 			act.moveToElement(ProposedInsurerSignature).build().perform();
 			C.Max_Char_Act(driver, act, signedCity, Error_SignedCity, Max_Name,Max_error_, e, Test.Case8(3), Test.Exp8(3));
 			act.moveToElement(signedCity).build().perform();
-			C.Send_verify_Valid_C(driver, signedCity, e, "Testing Codetru", Test.Case8(2), Test.Exp8(2));
+			C.Send_verify_Valid_C(driver, signedCity, e, "Alabama", Test.Case8(2), Test.Exp8(2));
 			act.moveToElement(signedCity).build().perform();
 			C.Fields(driver, signedCity, e,  Test.Case8(4), Test.Exp8(4));
+
 			
+			C.Fields(driver, ProposedInsurerSignature, e,  Test.Case8(31), Test.Exp8(31));
+			C.Fields(driver, ProposedInsurerSignature, e,  Test.Case8(32), Test.Exp8(32));
+			C.Fields(driver, ProposedInsurerSignature, e,  Test.Case8(5), Test.Exp8(5));
 			C.Fields(driver, ProposedInsurerSignature, e,  Test.Case8(6), Test.Exp8(6));
 			
 			C.Fields(driver, Date_Signed, e,  Test.Case8(7), Test.Exp8(7));
@@ -164,16 +168,12 @@ public class Step_8Page {
 			
 			C.Fields(driver, ProposedInsurerSignature, e,  Test.Case8(35), Test.Exp8(35));
 	
-			Thread.sleep(2000);
+			Thread.sleep(1000);
 			C.Fields(driver, ProposedInsurerSignature, e,  Test.Case8(39), Test.Exp8(39));
 			C.Click_Displayed(driver, NextStep8, application_btn, e, Test.Case8(36), Test.Exp8(36));
-			Thread.sleep(2000);
+			Thread.sleep(1000);
 			
 			
-			
-			C.Fields(driver, ProposedInsurerSignature, e,  Test.Case8(31), Test.Exp8(31));
-			C.Fields(driver, ProposedInsurerSignature, e,  Test.Case8(32), Test.Exp8(32));
-			C.Fields(driver, ProposedInsurerSignature, e,  Test.Case8(5), Test.Exp8(5));
 			Thread.sleep(1000);
 			NextStep8.click();
 		}

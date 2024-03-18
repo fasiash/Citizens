@@ -47,7 +47,11 @@ public class Step_3Page {
 
 	public void Policy_Owner_Information() throws Exception {
 		String Mandatory_Error = "Please enter a value.";
-
+//		C.W_C1(driver, wait, NextStep3, e, Test.Case3(9), Test.Exp3(9));
+		
+		C.Fields(driver, step3_No, e, Test.Case3(3), Test.Exp3(3));
+		C.Fields(driver, step3_No, e, Test.Case3(4), Test.Exp3(4));
+		
 		C.Mandate_Click(driver, NextStep3, e, Test.Case3(9), Test.Exp3(9));
 
 		C.Empty_Input(driver, Error_ProposedOWner_Message, Mandatory_Error, e, Test.Case3(8), Test.Exp3(8));
@@ -56,14 +60,13 @@ public class Step_3Page {
 	
 		C.C2(driver, step3_Yes, step3_No, e, Test.Case3(1), Test.Exp3(1));
 		Thread.sleep(1000);
+		C.Fields(driver, step3_No, e, Test.Case3(5), Test.Exp3(5));
+		C.Fields(driver, step3_No, e, Test.Case3(6), Test.Exp3(6));
 		C.Fields(driver, step3_No, e, Test.Case3(11), Test.Exp3(11));
 		Thread.sleep(1000);
 		C.Fields(driver, step3_No, e, Test.Case3(2), Test.Exp3(2));
 		
-		C.Fields(driver, step3_No, e, Test.Case3(3), Test.Exp3(3));
-		C.Fields(driver, step3_No, e, Test.Case3(4), Test.Exp3(4));
-		C.Fields(driver, step3_No, e, Test.Case3(5), Test.Exp3(5));
-		C.Fields(driver, step3_No, e, Test.Case3(6), Test.Exp3(6));
+		
 		C.Fields(driver, step3_No, e, Test.Case3(7), Test.Exp3(7));
 //		C.Mandate_Click(driver, NextStep3, e, Test.Case3(5), Test.Exp3(5));
 		NextStep3.click();

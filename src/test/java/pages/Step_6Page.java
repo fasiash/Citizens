@@ -109,14 +109,18 @@ public class Step_6Page {
 			C.Health_Question_M(driver, act, Error_HealthQuestions_4,Mandatory_Err, e, Test.Case6(9), Test.Exp6(9));
 
 			C.Health_Question_M(driver, act, Error_HealthQuestions_4,Mandatory_Err, e, Test.Case6(12), Test.Exp6(12));
-
+			
+			C.act_scroll1(driver, act, Error_HealthQuestions_7, e, Mandatory_Err, Mandatory_Err);
+			
 			C.Health_Question_M(driver, act, Error_HealthQuestions_5,Mandatory_Err, e, Test.Case6(15), Test.Exp6(15));
+			Thread.sleep(2000);
 
 			C.Health_Question_M(driver, act, Error_HealthQuestions_6,Mandatory_Err, e, Test.Case6(18), Test.Exp6(18));
 
 			C.Health_Question_M(driver, act, Error_HealthQuestions_7,Mandatory_Err, e, Test.Case6(21), Test.Exp6(21));
-
+			C.act_scroll1(driver, act, no_physician, e, Mandatory_Err, Mandatory_Err);
 			C.Health_Question_M(driver, act, Error_HealthQuestions_8,Mandatory_Err, e, Test.Case6(24), Test.Exp6(24));
+			Thread.sleep(2000);
 			
 			C.Health_Question_C(driver, act, HealthQuestions1, "1", e, Test.Case6(2), Test.Exp6(2));
 

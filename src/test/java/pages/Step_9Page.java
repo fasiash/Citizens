@@ -3,8 +3,10 @@ package pages;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.WindowType;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -127,7 +129,30 @@ public class Step_9Page {
 	WebElement SecurityCode_PInHintVisa_Master;
 	@FindBy(id="submitButton")
 	WebElement MakePayment ;
-
+	@FindBy(xpath="//input[@id='ReceiptEmail']")
+	WebElement mail_Id;
+ 
+	@FindBy(xpath="//input[@name='sendReceipt']")
+	WebElement send_btn;
+ 
+	@FindBy(id="login")
+	WebElement email_field;
+ 
+	@FindBy(id="refreshbut")
+	WebElement submit;
+ 
+	@FindBy(xpath="//span[.='<MarketingIntl@citizensinc.com>']")
+	WebElement email_from;
+ 
+	@FindBy(xpath="//a[@title='Receipt.pdf']")
+	WebElement reciept;
+ 
+	@FindBy(xpath="(//span[.='MarketingIntl@citizensinc.com'])")
+	WebElement email_inbox;
+ 
+	@FindBy(xpath="return document.querySelector('downloads-manager').shadowRoot.querySelector('downloads-item').shadowRoot.querySelector('div>div>div>a')")
+	WebElement open_file;
+ 
 	//--------------------------------------
 	//ACH Payment Method
 	@FindBy(xpath="//ion-label[text()='ACH (Automated Clearing House) ']/following-sibling::ion-radio[@slot='start']")
@@ -200,7 +225,7 @@ public class Step_9Page {
 //
 //		C.Empty_Input(driver, ErrorMessage_PolicyPayment_PaymentType,"Please choose a payment type.", e,Test.Case10(10), Test.Exp10(10));
 //
-//		C.Fields(driver, PaymentType_premium, e, Test.Case10(11), Test.Exp10(11));
+		C.Fields(driver, PaymentType_premium, e, Test.Case10(11), Test.Exp10(11));
 //
 //		C.C2(driver, RelationShipDropDown, RelationShip_Parent, e, Test.Case10(6), Test.Exp10(6));
 //
@@ -208,15 +233,15 @@ public class Step_9Page {
 //		C.C2(driver, PaymentType, PaymentType_premium, e, Test.Case10(9), Test.Exp10(9));
 //		
 //
-//		C.Fields(driver, NextBtn_BillingPage, e, Test.Case10(12), Test.Exp10(12));
-//
-//		C.Fields(driver, RelationShip_Parent, e, Test.Case10(13), Test.Exp10(13));
-//
-//		C.Fields(driver, Disclaimeryes, e, Test.Case10(14), Test.Exp10(14));
-//
-//		C.Fields(driver, CreditCard, e, Test.Case10(15), Test.Exp10(15));
-//
-//		C.Fields(driver, nxtBtn, e, Test.Case10(16), Test.Exp10(16));
+		C.Fields(driver, NextBtn_BillingPage, e, Test.Case10(12), Test.Exp10(12));
+
+		C.Fields(driver, RelationShip_Parent, e, Test.Case10(13), Test.Exp10(13));
+
+		C.Fields(driver, Disclaimeryes, e, Test.Case10(14), Test.Exp10(14));
+
+		C.Fields(driver, CreditCard, e, Test.Case10(15), Test.Exp10(15));
+
+		C.Fields(driver, nxtBtn, e, Test.Case10(16), Test.Exp10(16));
 		
 		WebElement	nxtBtn1= driver.findElement(By.xpath("(//ion-col/ion-button[@size='small' and @color='primary'])[1]"));
 		act.scrollToElement(nxtBtn1).build().perform();
@@ -230,7 +255,10 @@ public class Step_9Page {
 //		C.C2(driver, Disclaimeryes, nxtBtn, e, Test.Case10(18), Test.Exp10(18));
 //		
 //
-		C.Scroll_Click(driver, wait, act, NextBtn_BillingPage, e, Test.Case10(136), Test.Exp10(136));
+//		C.Scroll_Click(driver, wait, act, NextBtn_BillingPage, e, Test.Case10(136), Test.Exp10(136));
+		C.scrollTo(driver, NextBtn_BillingPage);
+		 
+		NextBtn_BillingPage.click();
 
 		C.Sc_Empty_Input(driver, act, Error_FormOfPayment, Mandatory_Err, e, Test.Case10(22), Test.Exp10(22));
 
@@ -401,24 +429,6 @@ public class Step_9Page {
 		C.Cl_Ck_Send(driver,CardNumber, ExpiryYear, e, "24", Test.Case10(89), Test.Exp10(89));
 
 		Thread.sleep(1000);
-
-		C.Max_Char_C(driver, SecurityCode, Error_SecurityCode, CardNumber, "12", "Enter a valid security code", e, Test.Case10(133), Test.Exp10(133));
-
-		C.Cl_Ck_Send(driver,SecurityCode, SecurityCode, e, "123", Test.Case10(97), Test.Exp10(97));
-
-		C.Empty_Input(driver, SecurityCode_PInHintVisa_Master,"Last 3 digits on the back of card", e,Test.Case10(100), Test.Exp10(100));
-
-		C.Max_Char_C(driver, CardNumber, SecurityCode_PInHintVisa_Master, SecurityCode, "371449635398431", "4 digits on the front of card", 
-				e, Test.Case10(134), Test.Exp10(134));
-
-		C.Send_verify_Valid_C(driver, CardNumber, e, "5555555555554444", Test.Case10(99), Test.Exp10(99));
-
-		Thread.sleep(1000);
-		C.Cl_Ck_Send(driver,SecurityCode, SecurityCode, e, "123", Test.Case10(102), Test.Exp10(102));
-
-		//MakePayment.click();
-		C.Mandate_Click(driver, MakePayment, e, Test.Case10(135), Test.Exp10(135));
-
 		C.Fields(driver, cardHolderName, e, Test.Case10(103), Test.Exp10(103));
 		C.Fields(driver, cardHolderName, e, Test.Case10(104), Test.Exp10(104));
 		C.Fields(driver, cardHolderName, e, Test.Case10(105), Test.Exp10(105));
@@ -435,6 +445,62 @@ public class Step_9Page {
 		C.Fields(driver, nxtBtn, e, Test.Case10(5), Test.Exp10(5));
 
 		C.Fields(driver, PaymentType, e, Test.Case10(8), Test.Exp10(8));
+		C.Max_Char_C(driver, SecurityCode, Error_SecurityCode, CardNumber, "12", "Enter a valid security code", e, Test.Case10(133), Test.Exp10(133));
 
+		C.Cl_Ck_Send(driver,SecurityCode, SecurityCode, e, "123", Test.Case10(97), Test.Exp10(97));
+
+		C.Empty_Input(driver, SecurityCode_PInHintVisa_Master,"Last 3 digits on the back of card", e,Test.Case10(100), Test.Exp10(100));
+
+		C.Max_Char_C(driver, CardNumber, SecurityCode_PInHintVisa_Master, SecurityCode, "371449635398431", "4 digits on the front of card", 
+				e, Test.Case10(134), Test.Exp10(134));
+
+		C.Send_verify_Valid_C(driver, CardNumber, e, "5555555555554444", Test.Case10(99), Test.Exp10(99));
+
+		Thread.sleep(1000);
+		C.Cl_Ck_Send(driver,SecurityCode, SecurityCode, e, "123", Test.Case10(102), Test.Exp10(102));
+
+		//MakePayment.click();
+		C.Mandate_Click(driver, MakePayment, e, Test.Case10(135), Test.Exp10(135));	
+		driver.switchTo().parentFrame();
+		Thread.sleep(2000);
+		driver.findElement(By.id("ReceiptEmail")).sendKeys("cicalife_001@yopmail.com");
+		Thread.sleep(1000);
+		driver.findElement(By.id("sendReceipt")).click();
+		Thread.sleep(2000);
+		C.Fields(driver, nxtBtn, e, Test.Case10(137), Test.Exp10(137));
+		C.Fields(driver, nxtBtn, e, Test.Case10(138), Test.Exp10(138));
+		driver.switchTo().alert().dismiss();
+		Thread.sleep(1000);
+		driver.switchTo().newWindow(WindowType.TAB);	
+		driver.get("https://yopmail.com/");
+		C.Fields(driver, nxtBtn, e, Test.Case10(139), Test.Exp10(139));
+		C.Fields(driver, nxtBtn, e, Test.Case10(140), Test.Exp10(140));
+		driver.findElement(By.id("login")).sendKeys("cicalife_001@yopmail.com");
+		driver.findElement(By.id("refreshbut")).click();
+		driver.switchTo().frame("ifmail");
+		WebElement email_from = driver.findElement(By.xpath("//span[.='<MarketingIntl@citizensinc.com>']"));
+
+		if (email_from.isDisplayed()) {
+			driver.findElement(By.xpath("//a[@title='Receipt.pdf']")).click();
+		} else {
+			driver.switchTo().defaultContent();
+			driver.switchTo().frame("ifinbox");// ifmail
+			driver.findElement(By.xpath("(//span[.='MarketingIntl@citizensinc.com'])")).click();
+			driver.switchTo().defaultContent();
+			driver.switchTo().frame("ifmail");
+			driver.findElement(By.xpath("//a[@title='Receipt.pdf']")).click();
+		}
+		Thread.sleep(3000);
+		driver.switchTo().newWindow(WindowType.TAB);
+		driver.get("chrome://downloads/");
+		Thread.sleep(2000);
+		C.Fields(driver, nxtBtn, e, Test.Case10(141), Test.Exp10(141));
+		C.Fields(driver, nxtBtn, e, Test.Case10(142), Test.Exp10(142));
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		WebElement open_file = (WebElement) js.executeScript("return document.querySelector('downloads-manager').shadowRoot.querySelector('downloads-item').shadowRoot.querySelector('div>div>div>a')");
+		open_file.click();
+		C.Fields(driver, nxtBtn, e, Test.Case10(143), Test.Exp10(143));
+		
+	
 	}
 }

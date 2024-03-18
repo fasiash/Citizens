@@ -1,5 +1,6 @@
 pages\Step_9Page.class
 pages\T_Edit_and_SubmitGaruntee.class
+pages\YopMail.class
 pages\T_Edit_and_Submit1.class
 utils\Browser.class
 pages\LoginPage.class
