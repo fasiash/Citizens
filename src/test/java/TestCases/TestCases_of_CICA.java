@@ -5,6 +5,8 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 import pages.*;
 import utils.Extent_Reports;
 import java.awt.Desktop;
@@ -122,7 +124,7 @@ public class TestCases_of_CICA{
 	
 	@BeforeTest
 	public void chromeLaunch() {
-//		WebDriverManager.chromedriver().setup();
+		WebDriverManager.chromedriver().setup();
 //		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Codetru\\Desktop\\chromedriver.exe");
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--allow-running-insecure-content");
