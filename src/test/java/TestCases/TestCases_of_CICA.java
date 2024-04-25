@@ -124,8 +124,8 @@ public class TestCases_of_CICA{
 	
 	@BeforeTest
 	public void chromeLaunch() {
-		WebDriverManager.chromedriver().setup();
-//		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Codetru\\Desktop\\chromedriver.exe");
+//		WebDriverManager.chromedriver().setup();
+		System.setProperty("webdriver.chrome.driver", "C://Users//Codetru//eclipse-workspace//SampleCodetruProject//Citizens_ProjectNewUpdated2//drivers//chromedriver.exe");
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--allow-running-insecure-content");
 		options.addArguments("--remote-allow-origins=*");
