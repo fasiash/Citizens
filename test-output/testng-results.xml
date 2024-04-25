@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="12" passed="10" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-04-23T17:02:29 IST" name="Default suite" finished-at="2024-04-23T17:10:06 IST" duration-ms="457289">
+    <groups>
+    </groups>
+    <test started-at="2024-04-23T17:02:29 IST" name="Default test" finished-at="2024-04-23T17:10:06 IST" duration-ms="457289">
+      <class name="TestCases.TestCases_of_CICA">
+        <test-method is-config="true" signature="ExtentReportSetup1()[pri:0, instance:TestCases.TestCases_of_CICA@fa4c865]" started-at="2024-04-23T17:02:28 IST" name="ExtentReportSetup1" finished-at="2024-04-23T17:02:29 IST" duration-ms="278" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExtentReportSetup1 -->
+        <test-method is-config="true" signature="chromeLaunch()[pri:0, instance:TestCases.TestCases_of_CICA@fa4c865]" started-at="2024-04-23T17:02:29 IST" name="chromeLaunch" finished-at="2024-04-23T17:02:56 IST" duration-ms="27545" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chromeLaunch -->
+        <test-method signature="Login()[pri:1, instance:TestCases.TestCases_of_CICA@fa4c865]" started-at="2024-04-23T17:02:56 IST" name="Login" finished-at="2024-04-23T17:03:01 IST" duration-ms="5054" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="Homepage()[pri:2, instance:TestCases.TestCases_of_CICA@fa4c865]" started-at="2024-04-23T17:03:01 IST" name="Homepage" finished-at="2024-04-23T17:04:25 IST" duration-ms="83429" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Homepage -->
+        <test-method signature="Step_1()[pri:3, instance:TestCases.TestCases_of_CICA@fa4c865]" started-at="2024-04-23T17:04:25 IST" name="Step_1" finished-at="2024-04-23T17:05:21 IST" duration-ms="56449" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Step_1 -->
+        <test-method signature="Step_2()[pri:4, instance:TestCases.TestCases_of_CICA@fa4c865]" started-at="2024-04-23T17:05:21 IST" name="Step_2" finished-at="2024-04-23T17:06:33 IST" duration-ms="71737" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Step_2 -->
+        <test-method signature="Step_3()[pri:5, instance:TestCases.TestCases_of_CICA@fa4c865]" started-at="2024-04-23T17:06:33 IST" name="Step_3" finished-at="2024-04-23T17:06:42 IST" duration-ms="8937" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Step_3 -->
+        <test-method signature="Step_4()[pri:6, instance:TestCases.TestCases_of_CICA@fa4c865]" started-at="2024-04-23T17:06:42 IST" name="Step_4" finished-at="2024-04-23T17:08:11 IST" duration-ms="89443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Step_4 -->
+        <test-method signature="Step_5()[pri:7, instance:TestCases.TestCases_of_CICA@fa4c865]" started-at="2024-04-23T17:08:11 IST" name="Step_5" finished-at="2024-04-23T17:08:18 IST" duration-ms="6653" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Step_5 -->
+        <test-method signature="Step_6()[pri:8, instance:TestCases.TestCases_of_CICA@fa4c865]" started-at="2024-04-23T17:08:18 IST" name="Step_6" finished-at="2024-04-23T17:09:03 IST" duration-ms="44976" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Step_6 -->
+        <test-method signature="Step_7()[pri:9, instance:TestCases.TestCases_of_CICA@fa4c865]" started-at="2024-04-23T17:09:03 IST" name="Step_7" finished-at="2024-04-23T17:09:10 IST" duration-ms="7347" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Step_7 -->
+        <test-method signature="Step_8()[pri:10, instance:TestCases.TestCases_of_CICA@fa4c865]" started-at="2024-04-23T17:09:10 IST" name="Step_8" finished-at="2024-04-23T17:09:56 IST" duration-ms="45281" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Step_8 -->
+        <test-method signature="Update()[pri:11, instance:TestCases.TestCases_of_CICA@fa4c865]" started-at="2024-04-23T17:09:56 IST" name="Update" finished-at="2024-04-23T17:10:00 IST" duration-ms="4516" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <ion-button _ngcontent-jkc-c80="" id="applicationButton" fill="clear" color="dark" class="ion-color ion-color-dark md button button-clear ion-activatable ion-focusable hydrated" style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">...</ion-button> is not clickable at point (1043, 27). Other element would receive the click: <ion-modal class="md modal-default hydrated show-modal" id="ion-overlay-4" no-router="" aria-modal="true" tabindex="-1" style="z-index: 20004; pointer-events: none;">...</ion-modal>
+  (Session info: chrome=124.0.6367.60)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d01eebfdd83d2610ca88a21c8f53b9b1, clickElement {id=f.A139D0186449EAA580B40542C9FD6C2D.d.A6EF39301EC0AD330E00573D18232148.e.1020}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.60, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: C:\Users\Codetru\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59191}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59191/devtoo..., se:cdpVersion: 124.0.6367.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d01eebfdd83d2610ca88a21c8f53b9b1)] -> id: applicationButton]
+Session ID: d01eebfdd83d2610ca88a21c8f53b9b1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <ion-button _ngcontent-jkc-c80="" id="applicationButton" fill="clear" color="dark" class="ion-color ion-color-dark md button button-clear ion-activatable ion-focusable hydrated" style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">...</ion-button> is not clickable at point (1043, 27). Other element would receive the click: <ion-modal class="md modal-default hydrated show-modal" id="ion-overlay-4" no-router="" aria-modal="true" tabindex="-1" style="z-index: 20004; pointer-events: none;">...</ion-modal>
+  (Session info: chrome=124.0.6367.60)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d01eebfdd83d2610ca88a21c8f53b9b1, clickElement {id=f.A139D0186449EAA580B40542C9FD6C2D.d.A6EF39301EC0AD330E00573D18232148.e.1020}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.60, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: C:\Users\Codetru\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59191}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59191/devtoo..., se:cdpVersion: 124.0.6367.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d01eebfdd83d2610ca88a21c8f53b9b1)] -> id: applicationButton]
+Session ID: d01eebfdd83d2610ca88a21c8f53b9b1
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at pages.T_Edit_and_Submit.Edit_Submit(T_Edit_and_Submit.java:59)
+at TestCases.TestCases_of_CICA.Update(TestCases_of_CICA.java:104)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Update -->
+        <test-method signature="Step_10()[pri:12, instance:TestCases.TestCases_of_CICA@fa4c865]" started-at="2024-04-23T17:10:00 IST" name="Step_10" finished-at="2024-04-23T17:10:06 IST" duration-ms="5838" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <span _ngcontent-jkc-c152="" class="ion-text-left" style="margin-right: auto;">...</span> is not clickable at point (507, 497). Other element would receive the click: <ion-list _ngcontent-jkc-c152="" role="list" class="md list-md hydrated">...</ion-list>
+  (Session info: chrome=124.0.6367.60)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d01eebfdd83d2610ca88a21c8f53b9b1, clickElement {id=f.A139D0186449EAA580B40542C9FD6C2D.d.A6EF39301EC0AD330E00573D18232148.e.1895}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.60, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: C:\Users\Codetru\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59191}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59191/devtoo..., se:cdpVersion: 124.0.6367.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d01eebfdd83d2610ca88a21c8f53b9b1)] -> xpath: //span[text()='Step 9: Make a Payment']]
+Session ID: d01eebfdd83d2610ca88a21c8f53b9b1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span _ngcontent-jkc-c152="" class="ion-text-left" style="margin-right: auto;">...</span> is not clickable at point (507, 497). Other element would receive the click: <ion-list _ngcontent-jkc-c152="" role="list" class="md list-md hydrated">...</ion-list>
+  (Session info: chrome=124.0.6367.60)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d01eebfdd83d2610ca88a21c8f53b9b1, clickElement {id=f.A139D0186449EAA580B40542C9FD6C2D.d.A6EF39301EC0AD330E00573D18232148.e.1895}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.60, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: C:\Users\Codetru\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59191}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59191/devtoo..., se:cdpVersion: 124.0.6367.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d01eebfdd83d2610ca88a21c8f53b9b1)] -> xpath: //span[text()='Step 9: Make a Payment']]
+Session ID: d01eebfdd83d2610ca88a21c8f53b9b1
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+at pages.Step_9Page.Make_a_Payment(Step_9Page.java:188)
+at TestCases.TestCases_of_CICA.Step_10(TestCases_of_CICA.java:111)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Step_10 -->
+        <test-method is-config="true" signature="teardown1()[pri:0, instance:TestCases.TestCases_of_CICA@fa4c865]" started-at="2024-04-23T17:10:06 IST" name="teardown1" finished-at="2024-04-23T17:10:07 IST" duration-ms="1408" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown1 -->
+      </class> <!-- TestCases.TestCases_of_CICA -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
