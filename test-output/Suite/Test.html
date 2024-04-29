@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>22/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>12/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Mar 15 10:36:32 IST 2024</td>
+<td>Started on:</td><td>Mon Apr 29 10:28:08 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>1225 seconds (1225766 ms)</td>
+<tr><td>Total time:</td><td>536 seconds (536535 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,295 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='TestCases.TestCases_of_CICA2.Update()'><b>Update</b><br>Test class: TestCases.TestCases_of_CICA2</td>
-<td><div><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
-Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8f6d0acc7d9c4cbbe6e57fba06408e58, actions {actions=[org.openqa.selenium.interactions.Sequence@3ca38e3d]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.129, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\Codetru\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61728}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61728/devtoo..., se:cdpVersion: 122.0.6261.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8f6d0acc7d9c4cbbe6e57fba06408e58
-	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:520)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:182)
-	at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:204)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
-	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
-	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
-	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1921)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$23(JsonOutput.java:204)
-	at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:222)
-	at java.base/java.util.Map.forEach(Map.java:716)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$25(JsonOutput.java:217)
-	at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:400)
-	at org.openqa.selenium.json.Json.toJson(Json.java:133)
-	at org.openqa.selenium.json.Json.toJson(Json.java:119)
-	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:245)
-	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:111)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:178)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:605)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:603)
-	at pages.T_Edit_and_Submit.Edit_Submit(T_Edit_and_Submit.java:70)
-	at TestCases.TestCases_of_CICA2.Update(TestCases_of_CICA2.java:107)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
-Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
-Driver info: driver.version: RemoteWebDriver
-		at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:431)
-		at org.openqa.selenium.json.Json.toJson(Json.java:131)
-		... 37 more
-	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:516)
-	... 58 more
-Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=122.0.6261.129)
-Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8f6d0acc7d9c4cbbe6e57fba06408e58, findElement {value=(//td/ion-button[@title=&apos;Edit Application&apos;])[last()], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.129, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\Codetru\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61728}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61728/devtoo..., se:cdpVersion: 122.0.6261.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8f6d0acc7d9c4cbbe6e57fba06408e58
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy15.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.interactions.WheelInput$ScrollOrigin.asArg(WheelInput.java:125)
-	at org.openqa.selenium.interactions.WheelInput$ScrollInteraction.encode(WheelInput.java:111)
-	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:72)
-	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)
-	... 60 more
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace691320983", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace691320983'><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
-Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8f6d0acc7d9c4cbbe6e57fba06408e58, actions {actions=[org.openqa.selenium.interactions.Sequence@3ca38e3d]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.129, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\Codetru\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61728}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61728/devtoo..., se:cdpVersion: 122.0.6261.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8f6d0acc7d9c4cbbe6e57fba06408e58
-	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:520)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:182)
-	at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:204)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
-	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
-	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
-	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1921)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$23(JsonOutput.java:204)
-	at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:222)
-	at java.base/java.util.Map.forEach(Map.java:716)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$25(JsonOutput.java:217)
-	at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:400)
-	at org.openqa.selenium.json.Json.toJson(Json.java:133)
-	at org.openqa.selenium.json.Json.toJson(Json.java:119)
-	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:245)
-	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:111)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:178)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:605)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:603)
-	at pages.T_Edit_and_Submit.Edit_Submit(T_Edit_and_Submit.java:70)
-	at TestCases.TestCases_of_CICA2.Update(TestCases_of_CICA2.java:107)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-	Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
-Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
-Driver info: driver.version: RemoteWebDriver
-		at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:431)
-		at org.openqa.selenium.json.Json.toJson(Json.java:131)
-		... 37 more
-Caused by: java.lang.reflect.InvocationTargetException
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:119)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:516)
-	... 58 more
-Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=122.0.6261.129)
-Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8f6d0acc7d9c4cbbe6e57fba06408e58, findElement {value=(//td/ion-button[@title=&apos;Edit Application&apos;])[last()], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.129, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\Codetru\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61728}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61728/devtoo..., se:cdpVersion: 122.0.6261.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8f6d0acc7d9c4cbbe6e57fba06408e58
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy15.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.interactions.WheelInput$ScrollOrigin.asArg(WheelInput.java:125)
-	at org.openqa.selenium.interactions.WheelInput$ScrollInteraction.encode(WheelInput.java:111)
-	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:72)
-	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	... 60 more
-</pre></div></td>
-<td>10</td>
-<td>TestCases.TestCases_of_CICA2@37ceb1df</td></tr>
-<tr>
-<td title='TestCases.TestCases_of_CICA2.Step_10()'><b>Step_10</b><br>Test class: TestCases.TestCases_of_CICA2</td>
-<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=122.0.6261.129)
-Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8f6d0acc7d9c4cbbe6e57fba06408e58, findElement {value=//span[text()=&apos;Step 9: Make a Payment&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.129, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\Codetru\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61728}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61728/devtoo..., se:cdpVersion: 122.0.6261.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8f6d0acc7d9c4cbbe6e57fba06408e58
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
-	at pages.Step_9Page.Make_a_Payment(Step_9Page.java:165)
-	at TestCases.TestCases_of_CICA2.Step_10(TestCases_of_CICA2.java:113)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1481038207", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1481038207'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=122.0.6261.129)
-Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8f6d0acc7d9c4cbbe6e57fba06408e58, findElement {value=//span[text()=&apos;Step 9: Make a Payment&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.129, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\Codetru\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61728}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61728/devtoo..., se:cdpVersion: 122.0.6261.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8f6d0acc7d9c4cbbe6e57fba06408e58
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
-	at pages.Step_9Page.Make_a_Payment(Step_9Page.java:165)
-	at TestCases.TestCases_of_CICA2.Step_10(TestCases_of_CICA2.java:113)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>TestCases.TestCases_of_CICA2@37ceb1df</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -365,115 +76,65 @@ Session ID: 8f6d0acc7d9c4cbbe6e57fba06408e58
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='TestCases.TestCases_of_CICA.Login()'><b>Login</b><br>Test class: TestCases.TestCases_of_CICA</td>
-<td></td>
-<td>4</td>
-<td>TestCases.TestCases_of_CICA@41a2befb</td></tr>
-<tr>
-<td title='TestCases.TestCases_of_CICA.Step_4()'><b>Step_4</b><br>Test class: TestCases.TestCases_of_CICA</td>
-<td></td>
-<td>87</td>
-<td>TestCases.TestCases_of_CICA@41a2befb</td></tr>
-<tr>
-<td title='TestCases.TestCases_of_CICA2.Step_1()'><b>Step_1</b><br>Test class: TestCases.TestCases_of_CICA2</td>
-<td></td>
-<td>52</td>
-<td>TestCases.TestCases_of_CICA2@37ceb1df</td></tr>
-<tr>
-<td title='TestCases.TestCases_of_CICA.Homepage()'><b>Homepage</b><br>Test class: TestCases.TestCases_of_CICA</td>
-<td></td>
-<td>15</td>
-<td>TestCases.TestCases_of_CICA@41a2befb</td></tr>
-<tr>
-<td title='TestCases.TestCases_of_CICA.Step_10()'><b>Step_10</b><br>Test class: TestCases.TestCases_of_CICA</td>
-<td></td>
-<td>162</td>
-<td>TestCases.TestCases_of_CICA@41a2befb</td></tr>
-<tr>
-<td title='TestCases.TestCases_of_CICA2.Step_4()'><b>Step_4</b><br>Test class: TestCases.TestCases_of_CICA2</td>
-<td></td>
-<td>86</td>
-<td>TestCases.TestCases_of_CICA2@37ceb1df</td></tr>
-<tr>
-<td title='TestCases.TestCases_of_CICA.Step_1()'><b>Step_1</b><br>Test class: TestCases.TestCases_of_CICA</td>
-<td></td>
-<td>53</td>
-<td>TestCases.TestCases_of_CICA@41a2befb</td></tr>
-<tr>
 <td title='TestCases.TestCases_of_CICA.Update()'><b>Update</b><br>Test class: TestCases.TestCases_of_CICA</td>
 <td></td>
-<td>16</td>
-<td>TestCases.TestCases_of_CICA@41a2befb</td></tr>
-<tr>
-<td title='TestCases.TestCases_of_CICA2.Login()'><b>Login</b><br>Test class: TestCases.TestCases_of_CICA2</td>
-<td></td>
-<td>2</td>
-<td>TestCases.TestCases_of_CICA2@37ceb1df</td></tr>
-<tr>
-<td title='TestCases.TestCases_of_CICA2.Step_8()'><b>Step_8</b><br>Test class: TestCases.TestCases_of_CICA2</td>
-<td></td>
-<td>282</td>
-<td>TestCases.TestCases_of_CICA2@37ceb1df</td></tr>
-<tr>
-<td title='TestCases.TestCases_of_CICA2.Step_7()'><b>Step_7</b><br>Test class: TestCases.TestCases_of_CICA2</td>
-<td></td>
-<td>2</td>
-<td>TestCases.TestCases_of_CICA2@37ceb1df</td></tr>
+<td>15</td>
+<td>TestCases.TestCases_of_CICA@49438269</td></tr>
 <tr>
 <td title='TestCases.TestCases_of_CICA.Step_2()'><b>Step_2</b><br>Test class: TestCases.TestCases_of_CICA</td>
 <td></td>
-<td>73</td>
-<td>TestCases.TestCases_of_CICA@41a2befb</td></tr>
+<td>69</td>
+<td>TestCases.TestCases_of_CICA@49438269</td></tr>
 <tr>
-<td title='TestCases.TestCases_of_CICA2.Step_3()'><b>Step_3</b><br>Test class: TestCases.TestCases_of_CICA2</td>
+<td title='TestCases.TestCases_of_CICA.Login()'><b>Login</b><br>Test class: TestCases.TestCases_of_CICA</td>
 <td></td>
-<td>7</td>
-<td>TestCases.TestCases_of_CICA2@37ceb1df</td></tr>
-<tr>
-<td title='TestCases.TestCases_of_CICA.Step_7()'><b>Step_7</b><br>Test class: TestCases.TestCases_of_CICA</td>
-<td></td>
-<td>4</td>
-<td>TestCases.TestCases_of_CICA@41a2befb</td></tr>
+<td>3</td>
+<td>TestCases.TestCases_of_CICA@49438269</td></tr>
 <tr>
 <td title='TestCases.TestCases_of_CICA.Step_3()'><b>Step_3</b><br>Test class: TestCases.TestCases_of_CICA</td>
 <td></td>
 <td>7</td>
-<td>TestCases.TestCases_of_CICA@41a2befb</td></tr>
+<td>TestCases.TestCases_of_CICA@49438269</td></tr>
 <tr>
-<td title='TestCases.TestCases_of_CICA2.Homepage()'><b>Homepage</b><br>Test class: TestCases.TestCases_of_CICA2</td>
+<td title='TestCases.TestCases_of_CICA.Step_4()'><b>Step_4</b><br>Test class: TestCases.TestCases_of_CICA</td>
 <td></td>
-<td>16</td>
-<td>TestCases.TestCases_of_CICA2@37ceb1df</td></tr>
+<td>87</td>
+<td>TestCases.TestCases_of_CICA@49438269</td></tr>
 <tr>
-<td title='TestCases.TestCases_of_CICA2.Step_5()'><b>Step_5</b><br>Test class: TestCases.TestCases_of_CICA2</td>
+<td title='TestCases.TestCases_of_CICA.Homepage()'><b>Homepage</b><br>Test class: TestCases.TestCases_of_CICA</td>
 <td></td>
-<td>6</td>
-<td>TestCases.TestCases_of_CICA2@37ceb1df</td></tr>
-<tr>
-<td title='TestCases.TestCases_of_CICA2.Step_6()'><b>Step_6</b><br>Test class: TestCases.TestCases_of_CICA2</td>
-<td></td>
-<td>77</td>
-<td>TestCases.TestCases_of_CICA2@37ceb1df</td></tr>
+<td>20</td>
+<td>TestCases.TestCases_of_CICA@49438269</td></tr>
 <tr>
 <td title='TestCases.TestCases_of_CICA.Step_6()'><b>Step_6</b><br>Test class: TestCases.TestCases_of_CICA</td>
 <td></td>
-<td>39</td>
-<td>TestCases.TestCases_of_CICA@41a2befb</td></tr>
-<tr>
-<td title='TestCases.TestCases_of_CICA2.Step_2()'><b>Step_2</b><br>Test class: TestCases.TestCases_of_CICA2</td>
-<td></td>
-<td>72</td>
-<td>TestCases.TestCases_of_CICA2@37ceb1df</td></tr>
+<td>44</td>
+<td>TestCases.TestCases_of_CICA@49438269</td></tr>
 <tr>
 <td title='TestCases.TestCases_of_CICA.Step_8()'><b>Step_8</b><br>Test class: TestCases.TestCases_of_CICA</td>
 <td></td>
-<td>42</td>
-<td>TestCases.TestCases_of_CICA@41a2befb</td></tr>
+<td>38</td>
+<td>TestCases.TestCases_of_CICA@49438269</td></tr>
+<tr>
+<td title='TestCases.TestCases_of_CICA.Step_10()'><b>Step_10</b><br>Test class: TestCases.TestCases_of_CICA</td>
+<td></td>
+<td>166</td>
+<td>TestCases.TestCases_of_CICA@49438269</td></tr>
+<tr>
+<td title='TestCases.TestCases_of_CICA.Step_7()'><b>Step_7</b><br>Test class: TestCases.TestCases_of_CICA</td>
+<td></td>
+<td>4</td>
+<td>TestCases.TestCases_of_CICA@49438269</td></tr>
 <tr>
 <td title='TestCases.TestCases_of_CICA.Step_5()'><b>Step_5</b><br>Test class: TestCases.TestCases_of_CICA</td>
 <td></td>
 <td>6</td>
-<td>TestCases.TestCases_of_CICA@41a2befb</td></tr>
+<td>TestCases.TestCases_of_CICA@49438269</td></tr>
+<tr>
+<td title='TestCases.TestCases_of_CICA.Step_1()'><b>Step_1</b><br>Test class: TestCases.TestCases_of_CICA</td>
+<td></td>
+<td>54</td>
+<td>TestCases.TestCases_of_CICA@49438269</td></tr>
 </table><p>
 </body>
 </html>
