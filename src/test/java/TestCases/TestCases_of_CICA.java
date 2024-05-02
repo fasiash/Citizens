@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import pages.*;
 import utils.Extent_Reports;
+
 import java.awt.Desktop;
 import java.io.File;
 import java.time.Duration;
@@ -129,6 +130,7 @@ public class TestCases_of_CICA{
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--allow-running-insecure-content");
 		options.addArguments("--remote-allow-origins=*");
+		
 		driver = new ChromeDriver(options);
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();	
