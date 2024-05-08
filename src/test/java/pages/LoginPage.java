@@ -43,7 +43,7 @@ public class LoginPage {
 		
 		wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 		
-		C.W_S(driver, wait, username, "7250883", e, Test.Case(1), Test.Exp(1));
+		C.W_S(driver, wait, username, "7250139", e, Test.Case(1), Test.Exp(1));
 		
 		C.W_S(driver, wait, password, "RockStar_K8", e, Test.Case(2), Test.Exp(2));
 		
