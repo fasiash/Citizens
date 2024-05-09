@@ -478,14 +478,14 @@ public class Step_9Page {
 		driver.findElement(By.id("login")).sendKeys("cicalife_001@yopmail.com");
 		driver.findElement(By.id("refreshbut")).click();
 		driver.switchTo().frame("ifmail");
-		WebElement email_from = driver.findElement(By.xpath("//span[.='<CPS@Citizensinc.com>']"));
+		WebElement email_from = driver.findElement(By.xpath("(//span[contains(text(),'citizensinc.com')])"));
 
 		if (email_from.isDisplayed()) {
 			driver.findElement(By.xpath("//a[@title='Receipt.pdf']")).click();
 		} else {
 			driver.switchTo().defaultContent();
 			driver.switchTo().frame("ifinbox");// ifmail
-			driver.findElement(By.xpath("//span[.='<CPS@Citizensinc.com>']")).click();
+			driver.findElement(By.xpath("(//span[contains(text(),'citizensinc.com')])")).click();
 			driver.switchTo().defaultContent();
 			driver.switchTo().frame("ifmail");
 			driver.findElement(By.xpath("//a[@title='Receipt.pdf']")).click();
